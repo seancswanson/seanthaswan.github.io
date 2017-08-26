@@ -1,0 +1,72 @@
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*--------------------------------------------*/
+
+
+/*----------Begin Styling After This----------*/
+
+
+/*--------------------------------------------*/
+
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Baloo Bhaijaan', cursive;
+}
+
+#top {
+  margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.block {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 3px;
+}
+
+.footer {
+  /*text-align: left;*/
+  position:static;
+}
