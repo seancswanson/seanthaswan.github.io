@@ -1,10 +1,16 @@
 /* Global */
+html {
+  font-family: "Concert One", "Open sans", sans-serif;
+
+}
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: "Open Sans";
 }
+
 main {
   flex: 1 0 auto;
 }
@@ -13,7 +19,12 @@ main {
 
 nav {
   background-color: #040404 !important;
-  z-index: 99 !important;
+  z-index: 1 !important;
+}
+
+nav ul a {
+  font-size: 16px !important;
+  letter-spacing: 1.5px !important;
 }
 
 nav, .nav-wrapper {
@@ -26,11 +37,10 @@ a.dropdown-button > ul > li > i {
 }
 
 .brand-logo {
-  font-family: "Concert One";
   margin-left: 25px;
 }
 
-.button-collapse{
+.button-collapse {
   font-size:30px;
 }
 
@@ -38,6 +48,24 @@ a.dropdown-button > ul > li > i {
   color: #404040 !important;
   font-size: 20px;
   text-transform: lowercase !important;
+}
+
+.side-nav li>a {
+  font-size: 16px !important;
+  letter-spacing: 2px;
+  -webkit-transition: font-size 500ms ease;
+  -moz-transition: font-size 500ms ease;
+  -o-transition: font-size 500ms ease;
+  transition: font-size 500ms ease;
+}
+
+.side-nav li>a:hover {
+  font-size: 18px !important;
+  letter-spacing: 2px;
+  -webkit-transition: font-size 500ms ease;
+  -moz-transition: font-size 500ms ease;
+  -o-transition: font-size 500ms ease;
+  transition: font-size 500ms ease;
 }
 
 .nav--header__wide {
@@ -50,6 +78,23 @@ a.dropdown-button > ul > li > i {
   letter-spacing: 5px;
 }
 
+.ul--nav__links > li:nth-child(1) > a:hover {
+  background: #404040;
+}
+
+.ul--nav__links > li:nth-child(2) > a:hover {
+  background: #404040;
+}
+
+.ul--nav__links > li:nth-child(3) > a:hover {
+  background: #404040;
+}
+
+.ul--nav__hover{
+  background: #404040;
+}
+
+
 .navbar-fixed {
   height: 64px !important;
 }
@@ -58,25 +103,26 @@ a.dropdown-button > ul > li > i {
   z-index:-1 !important;
 }
 
+
 /* Main */
 
-img{
-  max-height: 10vh;
+.card-image.img
+{
+  height:150px; !important
 }
 
 /* Footer */
 
-footer a {
-  font-size: 16px !important;
-  letter-spacing: 2px !important;
+.a--footer__copyright {
+  font-size: 15px !important;
+  font-weight: ;
+  letter-spacing: 1px !important;
+  position: relative !important;
+  top: 15px;
 }
 
-.i--footer {
-  font-size: 24px !important;
-  margin: 3px;
-}
-
-.page-footer, .footer-copyright {
+.page-footer {
   background-color: #040404 !important;
+  box-shadow: 0 1px 7px 0 #040404;
   padding-top: 7px !important;
 }
