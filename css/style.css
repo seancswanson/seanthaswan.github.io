@@ -16,6 +16,10 @@ nav {
   z-index: 99 !important;
 }
 
+nav, .nav-wrapper {
+  height: 64px !important;
+}
+
 a.dropdown-button > ul > li > i {
   margin: 0;
   padding: 0;
@@ -24,7 +28,10 @@ a.dropdown-button > ul > li > i {
 .brand-logo {
   font-family: "Concert One";
   margin-left: 25px;
-  margin-bottom: 3px !important;
+}
+
+.button-collapse{
+  font-size:30px;
 }
 
 .dropdown-content li>a, .dropdown-content li>span {
@@ -41,6 +48,10 @@ a.dropdown-button > ul > li > i {
   top: -4px;
   width: 300px;
   letter-spacing: 5px;
+}
+
+.navbar-fixed {
+  height: 64px !important;
 }
 
 #sidenav-overlay {
