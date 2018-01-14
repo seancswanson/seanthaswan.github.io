@@ -1,1 +1,5 @@
-script.js
+$( document ).ready(function(){
+
+  $(".button-collapse").sideNav();
+  
+});

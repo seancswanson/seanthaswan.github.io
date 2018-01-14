@@ -1,0 +1,65 @@
+/* Global */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+/* Nav */
+
+nav {
+  background-color: #040404 !important;
+  z-index: 99 !important;
+}
+
+a.dropdown-button > ul > li > i {
+  margin: 0;
+  padding: 0;
+}
+
+.brand-logo {
+  font-family: "Concert One";
+  margin-left: 25px;
+  margin-bottom: 3px !important;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+  color: #404040 !important;
+  font-size: 20px;
+  text-transform: lowercase !important;
+}
+
+.nav--header__wide {
+  display: none;
+  margin: 0;
+  position: relative;
+  left: 90px;
+  top: -4px;
+  width: 300px;
+  letter-spacing: 5px;
+}
+
+#sidenav-overlay {
+  z-index:-1 !important;
+}
+
+/* Main */
+
+img{
+  max-height: 10vh;
+}
+/* Footer */
+
+footer a {
+  font-size: 18px !important;
+  letter-spacing: 2px !important;
+}
+
+.page-footer, .footer-copyright {
+  background-color: #040404 !important;
+  padding-top: 5px !important;
+}
