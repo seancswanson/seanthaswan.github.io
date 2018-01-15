@@ -1,12 +1,16 @@
 $( document ).ready(function(){
 
   $(".button-collapse").sideNav();
-      $('.carousel').carousel({
+  $('.carousel.carousel-slider').carousel({
             dist:0,
-            shift:0,
-            padding:20,
-            indicators: true
+            shift: 1,
+            fullWidth: true
       });
-
+  $('.next').click(function() {
+    $('.carousel.carousel-slider').carousel('next');
+  });
+  $('.prev').click(function() {
+    $('.carousel.carousel-slider').carousel('prev');
+  });
         
 });
