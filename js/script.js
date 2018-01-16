@@ -15,5 +15,8 @@ $( document ).ready(function(){
         
 
   $('.collapsible').collapsible();
-  
+  $('.collapsible').on("tap", function() { 
+    $('.collapsible').collapsible();
+     });
+
 });
