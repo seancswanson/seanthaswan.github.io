@@ -144,8 +144,8 @@ a.dropdown-button > ul > li > i {
 .collapsible {
   border: none !important;
   border-radius: 2px;
-      position: relative;
-    z-index: 9999;
+      position: relative !important;
+    z-index: 9999 !important;
 }
 
 .collapsible-header {
