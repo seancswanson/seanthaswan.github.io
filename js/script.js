@@ -14,9 +14,24 @@ $( document ).ready(function(){
   });
         
 
-  $('.collapsible').collapsible();
-  $('.collapsible').on("tap", function() { 
-    $('.collapsible').collapsible();
-     });
+  // $('.collapsible').collapsible();
 
+
+$(".collapsible").on("mousedown touchstart", function(e) {
+
+    if (!$(this).hasClass("active")) {
+
+    // hide any open menus and remove all other classes
+
+    // open our new menu and add the open class
+    $(this).next("div").slideDown(300);
+    $(this).addClass("active");
+    }
+
+    else if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+    $(this).next("div").slideUp(300);
+    }
+    e.preventDefault();
+});
 });
