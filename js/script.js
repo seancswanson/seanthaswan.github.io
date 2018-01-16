@@ -14,14 +14,16 @@ $( document ).ready(function(){
   });
         
 
-  // $('.collapsible').collapsible();
+ 
 
 
-$(".collapsible").on("mousedown touchstart", function(e) {
+$(".div--container__technologies > ul").on("mousedown touchstart", function(e) {
 
     if (!$(this).hasClass("active")) {
-
+      console.log('clicked');
     // hide any open menus and remove all other classes
+    $(".collapsible-body").slideUp(300);
+    $(".div--container__technologies > ul").removeClass("active");
 
     // open our new menu and add the open class
     $(this).next("div").slideDown(300);
@@ -31,7 +33,8 @@ $(".collapsible").on("mousedown touchstart", function(e) {
     else if ($(this).hasClass("active")) {
     $(this).removeClass("active");
     $(this).next("div").slideUp(300);
+    console.log("slideback");
     }
-    e.preventDefault();
+
 });
 });
