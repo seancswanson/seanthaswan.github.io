@@ -120,18 +120,34 @@ a.dropdown-button > ul > li > i {
 
 /*Begin Intro*/
 
+.social-btn {
+  width: 275px;
+ 
+}
+.btn {
+  text-transform: capitalize;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  
+}
+
 .div--intro {
   width: 100%;
-  height:500px;
-  background: grey;
+  height: 500px;
+  background: white;
   margin: 0;
 }
 
-.img--portrait {
-  max-width: 400px;
-  position: absolute;
-  bottom: 175px;
-  border-radius:
+.div--portrait {
+  border: 1px solid black;
+  border-radius: 2px;
+  background-image: url('../sean2color.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 15px;
+  width: 300px;
+  height: 450px;
 }
 /* Begin Portfolio */
 .accordion {
