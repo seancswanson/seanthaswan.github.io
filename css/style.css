@@ -1,13 +1,13 @@
 /* Global */
 html {
-  font-family: "Concert One", "Open sans", sans-serif;
+  font-family: "Raleway", "Open sans", sans-serif;
 }
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Open Sans";
+  font-family: "Raleway";
 }
 
 main {
@@ -49,7 +49,7 @@ a.dropdown-button > ul > li > i {
 }
 
 .brand-logo {
-  margin-left: 25px;
+
 }
 
 .button-collapse {
@@ -122,8 +122,9 @@ a.dropdown-button > ul > li > i {
 
 .social-btn {
   width: 275px;
- 
+  font-family: "Concert One";
 }
+
 .btn {
   text-transform: capitalize;
   margin-top: 2.5px;
@@ -149,6 +150,37 @@ a.dropdown-button > ul > li > i {
   width: 300px;
   height: 450px;
 }
+
+.p--intro__title {
+  font-family: "Concert One";
+  font-size: 40px;
+  margin: 0;
+}
+.p--intro__subtitle {
+  font-family: "Concert One";
+  font-size: 24px;
+  margin: 0;
+  line-height: 34px;
+}
+
+
+
+.eyntk-r1 {
+  color: #2db2ff;
+  border-bottom: 3px dotted #5d5d5d;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1.6em;
+
+}
+
+.eyntk-r2 {
+  margin: 0;
+  font-size: 3.5em;
+  line-height: 1em;
+  font-weight: 100;
+}
+
 /* Begin Portfolio */
 .accordion {
   background: rgba(255,255,255,.8);
@@ -185,7 +217,7 @@ a.dropdown-button > ul > li > i {
 }
 
 .div--carouselitem__mndfll {
-  background: #ffe4c4;
+  background-color: #87c372;
 }
 
 .div--carouselitem__pokedex {
