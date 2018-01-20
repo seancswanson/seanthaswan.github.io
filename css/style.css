@@ -1,6 +1,6 @@
 /* Global */
 html {
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Roboto Slab', sans-serif !important;
 }
 
 body {
@@ -26,7 +26,13 @@ main {
 } /* this will style the thumb, ignoring the track */
  
 
-/* Nav */
+.white-text-large {
+  color: white;
+  position: relative;
+  top: 0px;
+}
+
+/*------------ Nav ---------------- */
 
 nav {
   background-color: #040404 !important;
@@ -34,8 +40,11 @@ nav {
 }
 
 nav ul a {
-  font-size: 16px !important;
-  letter-spacing: 1.5px !important;
+  font-size: 18px !important;
+  letter-spacing: 4px !important;
+  text-transform: uppercase;
+  padding-left: 30px !important;
+  padding-right: 30px !important; 
 }
 
 nav, .nav-wrapper {
@@ -45,10 +54,6 @@ nav, .nav-wrapper {
 a.dropdown-button > ul > li > i {
   margin: 0;
   padding: 0;
-}
-
-.brand-logo {
-
 }
 
 .button-collapse {
@@ -62,8 +67,10 @@ a.dropdown-button > ul > li > i {
 }
 
 .side-nav li>a {
-  font-size: 16px !important;
-  letter-spacing: 2px;
+  font-size: 18px !important;
+  font-family: "Fjalla One";
+  text-transform: uppercase;
+  letter-spacing: 3px;
   -webkit-transition: font-size 500ms ease;
   -moz-transition: font-size 500ms ease;
   -o-transition: font-size 500ms ease;
@@ -89,6 +96,14 @@ a.dropdown-button > ul > li > i {
   letter-spacing: 5px;
 }
 
+.navbar-fixed {
+  height: 64px !important;
+}
+
+.ul--nav__links {
+  font-family: "Fjalla One";
+}
+
 .ul--nav__links > li:nth-child(1) > a:hover {
   background: #404040;
 }
@@ -105,62 +120,101 @@ a.dropdown-button > ul > li > i {
   background: #404040;
 }
 
-
-.navbar-fixed {
-  height: 64px !important;
-}
-
 #sidenav-overlay {
   z-index:-1 !important;
 }
 
 
-/* Main */
+/*------------ Main -------------------*/
 
-/*Begin Intro*/
 
-.social-btn {
-  width: 275px;
-  font-family: "Roboto";
+/*------------ Begin Intro ------------*/
+
+div.div--intro > div > div:nth-child(2){
+  margin-bottom: 0px !important;
 }
 
-.btn {
+
+.button--social {
   text-transform: capitalize;
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
-  
+  margin: 20px auto;
+  display: block;
+  background: rgba(255,255,255,1) !important;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  width: 300px !important;
+  padding: 10px;
+  border: 2px solid rgba(255,255,255,.3);
+  box-shadow: 0 2px 10px 0 rgba(255,255,255,.2);
+  transition: box-shadow 500ms ease;
+  text-shadow: 0 0 0 rgba(0,0,0,.4);
+  line-height: 40px;
+}
+
+.button--social__bottom {
+  margin-bottom: 40px !important;
+}
+
+.button--social:hover {
+  box-shadow: 0 2px 10px 0 rgba(255,255,255,1);
+  transition: box-shadow 200ms ease;
+}
+
+.button--social__icon {
+  font-size: 40px !important;
+  margin-right: 10px;
 }
 
 .div--intro {
   width: 100%;
-  height: 500px;
-  background: white;
+  height: 100%;
+  background: #3290BE;
   margin: 0;
 }
 
 .div--portrait {
-  border: 1px solid black;
-  border-radius: 2px;
-  background-image: url('../sean2color.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-top: 15px;
+  text-align: center;
   width: 300px;
-  height: 450px;
+}
+
+.div--portrait img{
+  border-radius: 150px;
+  box-shadow: 1px 2px 25px 0 rgba(255,255,255,.1);
 }
 
 .p--intro__title {
-  font-size: 40px;
-  margin: 0;
-}
-.p--intro__subtitle {
-  font-size: 24px;
-  margin: 0;
-  line-height: 34px;
+  font-family: "Fjalla One";
+  font-size: 100px;
+  color: #f1c40f;
+  text-shadow: 2px 3px 1px rgba(255,255,255,.1);
+  text-transform: uppercase;
+  margin: 15px;
+  line-height: 110px !important;
 }
 
-/* Begin Portfolio */
+.p--intro__title__name {
+  font-size: 50px;
+  margin: 0;
+  font-family: "Fjalla One";
+  text-shadow: 2px 3px 1px rgba(241,196,15 ,.3);
+  text-transform: uppercase;
+}
+
+.p--intro__subtitle {
+  color: #f1c40f;
+  font-family: "Roboto Slab";
+  font-size: 24px;
+  font-weight: 400;
+  text-shadow: 1px 4px 1px rgba(255,255,255,.1);
+  margin: 0 auto;
+  width: 400px;
+  line-height: 34px;
+  letter-spacing: 2px;
+}
+
+/*------------ Portfolio  Panel ------------*/
+
 .accordion {
   background: rgba(255,255,255,.8);
   border-radius: 3px;
@@ -177,86 +231,56 @@ a.dropdown-button > ul > li > i {
   background: rgba(255,255,255,.9) !important;
 }
 
+
 .carousel {
   margin-bottom: 20px;
   height: 825px !important;
 }
 
 .carousel h2 {
-  font-size: 40px !important;
+  font-size: 60px !important;
   margin-top: 50px;
   margin-bottom: 20px;
   font-weight: 700;
-  font-family: 'Ubuntu Mono';
+  font-family: 'Fjalla One';
 }
 
 .carousel h3 {
-  font-size: 24px !important;
-  margin-top: 5px;
+  font-size: 32px !important;
+  font-family: "Roboto Slab";
+  margin-top: 30px;
   margin-bottom: 10px;
   letter-spacing: 2px;
   font-weight: 700;
 }
+
+.next {
+  font-size: 80px !important;
+  color: rgba(255,255,255,.3);
+  position: absolute;
+  right:0;
+  top: -260px;
+}
+
+.prev {
+  font-size: 80px !important;
+  color: rgba(255,255,255,.3);
+  position: absolute;
+  left:0;
+  top: -260px;
+}
+
+
+/*----------------- MNDF.LL PANEL ---------------------*/
 
 .div--carouselitem__mndfll {
   background-color: #2ecc71;
   color: #404040 !important;
 }
 
-.div--carouselitem__pokedex {
-  background: #bb1541;
-}
-
-.div--carouselitem__victorylist {
-  background: #0288d1;
-}
-
 .div--mndfll__title {
   background: #c1ffda08;
   padding: 0 5px 5px 0;
-  border-radius: 5px;
-}
-/*
-.div--container__technologies{
-  width: 190px !important;
-}
-
-
-.collapsible {
-  border: none !important;
-  border-radius: 2px;
-      position: relative !important;
-    z-index: 9999 !important;
-}
-
-.collapsible-header {
-  background: rgba(255,255,255,.2) !important;
-  font-size: 14px;
-  font-family: "Concert One";
-  border: none !important;
-}
-
-.collapsible-body {
-  margin: 3px !important;
-  background: rgba(255,255,255,.4);
-  padding: 10px !important;
-  border: none !important;
-  border-radius: 2px;
-}*/
-
-.div--screenshot__victorylist {
-  width: 410px;
-  height: 500px;
-  border-radius: 5px;
-  display: inline-block;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  box-shadow: 0 5px 15px -3px black;
-}
-
-.img--screenshot__chairman {
-  max-width: 800px !important;
-  max-height: auto;
   border-radius: 5px;
 }
 
@@ -268,10 +292,43 @@ a.dropdown-button > ul > li > i {
   box-shadow: 0 5px 15px -3px black;
 }
 
+
+/*----------------- CHAIRMAN PANEL --------------------*/
+
+
+.img--screenshot__chairman {
+  max-width: 800px !important;
+  max-height: auto;
+  border-radius: 5px;
+}
+
+
+/*----------------- POKEDEX PANEL ---------------------*/
+
+.div--carouselitem__pokedex {
+  background: #bb1541;
+}
+
 .img--screenshot__pokedex {
   max-width: 700px !important;
   max-height: auto;
   border-radius: 5px;
+  box-shadow: 0 5px 15px -3px black;
+}
+
+/*----------------- VICTORY LIST PANEL ----------------*/
+
+.div--carouselitem__victorylist {
+  background: #0288d1;
+}
+
+.div--screenshot__victorylist {
+  width: 410px;
+  height: 500px;
+  border-radius: 5px;
+  display: inline-block;
+  overflow-y: scroll;
+  overflow-x: hidden;
   box-shadow: 0 5px 15px -3px black;
 }
 
@@ -282,29 +339,13 @@ a.dropdown-button > ul > li > i {
   padding: 4px 1px 0 5px;
 }
 
-.prev {
-  font-size: 80px !important;
-  color: rgba(255,255,255,.3);
-  position: absolute;
-  left:0;
-  top: -260px;
-}
-
-.next {
-  font-size: 80px !important;
-  color: rgba(255,255,255,.3);
-  position: absolute;
-  right:0;
-  top: -260px;
-}
-
-.toggle {
-  font-size: 16px;
-  font-family: "Ubuntu Mono";
-}
+/*-------------- Accordion General ---------------------*/
 
 .accordion {
   background: transparent;
+  border-radius: 3px;
+  width: 250px;
+  margin: 0 auto 30px auto;
 }
 
 .accordion a {
@@ -317,16 +358,21 @@ a.dropdown-button > ul > li > i {
 
 .inner {
   background: transparent !important;
+  font-family: "Fjalla One";
   font-size: 20px;
-  font-weight: bold; 
+  letter-spacing: 2px;
+  padding: 5px; 
+  overflow: hidden;
+  display: none;
 }
 
-.white-text-large {
-  color: white;
-  position: relative;
-  top: 0px;
+.toggle {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto Slab";
 }
-/* Footer */
+
+/*------------ Footer -------------*/
 
 .a--footer__copyright {
   font-size: 15px !important;
