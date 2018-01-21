@@ -142,7 +142,7 @@ div.div--intro > div > div:nth-child(2){
   border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
-  width: 350px !important;
+  width: 335px !important;
   padding: 10px;
   border: 2px solid rgba(255,255,255,.3);
   box-shadow: 0 2px 10px 0 rgba(255,255,255,.2);
@@ -178,7 +178,7 @@ div.div--intro > div > div:nth-child(2){
 }
 
 .div--portrait img{
-  border-radius: 150px;
+  border-radius: 300px !important;
   box-shadow: 0 5px 2px 2px rgba(255,255,255,.1);
 }
 
@@ -306,8 +306,8 @@ div.div--intro > div > div:nth-child(2){
 }
 
 .img--screenshot__chairman {
-  max-width: 800px !important;
-  max-height: auto;
+  max-width: auto;
+  max-height: 400px;
   border-radius: 5px;
 }
 
@@ -390,6 +390,157 @@ div.div--intro > div > div:nth-child(2){
   width: 100%;
   height: 100%;
 }
+
+.div--container__contact{
+  position: relative !important;
+  top: 30px;
+  margin-bottom: 200px;
+}
+
+.img--contact__wave {
+  max-width: 80px;
+  -webkit-animation:rock 1s linear infinite;
+  -moz-animation:rock 1s linear infinite;
+  animation:rock 1s linear infinite;
+}
+
+.p--contact__social a {
+  font-size: 50px;
+  margin-right: 30px;
+  color: black;
+  position: relative !important;
+  top: -25px !important;
+}
+
+.p--contact__email {
+  font-size: 25px;
+}
+
+.p--contact__email i{
+  font-size: 35px;
+  margin-right: 5px;
+  position: relative !important;
+  top: 4px !important;
+}
+
+.p--contact__phone {
+  font-size: 25px;
+  position: relative;
+  top: -15px;
+  letter-spacing: 2px;
+}
+
+.p--contact__phone i{
+  font-size: 60px;
+  margin-right: 4px;
+  position: relative !important;
+  top: 11px !important;
+} 
+
+.span--contact__contactme {
+  text-transform: uppercase;
+  font-family: "Fjalla One";
+  font-size: 50px !important;
+  border-bottom: 8px double black;
+  position: relative !important;
+  top: -20px;
+  left: 30px;
+}
+
+
+@-webkit-keyframes rock {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  30% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  40% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+    60% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  70% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  80% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes rock {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  30% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  40% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+    60% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  70% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  80% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 
 /*------------ Footer -------------*/
 
