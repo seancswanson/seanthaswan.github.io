@@ -190,6 +190,7 @@ div.div--intro > div > div:nth-child(2){
   text-transform: uppercase;
   margin: 30px auto 10px auto;
   line-height: 110px !important;
+  animation: fadeIn 300ms linear;
 }
 
 .p--intro__title__name {
@@ -201,6 +202,8 @@ div.div--intro > div > div:nth-child(2){
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: 70px;
+  animation: fadeIn 900ms linear;
+
 }
 
 .p--intro__subtitle {
@@ -212,12 +215,17 @@ div.div--intro > div > div:nth-child(2){
   margin: 10px auto;
   line-height: 34px;
   letter-spacing: 2px;
+  animation: fadeIn 900ms linear;
 }
 
 .span--social__link {
   position: relative !important;
   top: -4px !important;
 }
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 /*------------ Portfolio  Panel ------------*/
 
@@ -340,6 +348,7 @@ div.div--intro > div > div:nth-child(2){
   overflow-y: scroll;
   overflow-x: hidden;
   box-shadow: 0 5px 15px -3px black;
+  text-align: initial !important;
 }
 
 .img--screenshot__victorylist {

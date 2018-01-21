@@ -6,10 +6,12 @@ $( document ).ready(function(){
             shift: 0,
             fullWidth: true
       });
-  $('.next').click(function() {
+
+  $('.next').bind("touchstart click", function(e) {
     $('.carousel.carousel-slider').carousel('next');
   });
-  $('.prev').click(function() {
+
+  $('.prev').bind("touchstart click", function(e) {
     $('.carousel.carousel-slider').carousel('prev');
   });
         
