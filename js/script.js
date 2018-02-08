@@ -1,33 +1,65 @@
 $( document ).ready(function(){
 
-  $(".button-collapse").sideNav();
-  $('.carousel.carousel-slider').carousel({
-            dist:0,
-            shift: 0,
-            fullWidth: true
-      });
+  $('#fullpage').fullpage({
+    lockAnchors: false,
+    anchors:['hello_world', 'portfolio', 'about' , 'get_in_touch' ],
+    navigation: false,
+    navigationPosition: 'right',
+    navigationTooltips: ['firstSlide', 'secondSlide'],
+    showActiveTooltip: false,
+    slidesNavigation: true,
+    slidesNavPosition: 'bottom',
 
-  $('.next').bind("touchstart click", function(e) {
-    $('.carousel.carousel-slider').carousel('next');
+    //Scrolling
+    css3: true,
+    scrollingSpeed: 700,
+    autoScrolling: true,
+    fitToSection: true,
+    fitToSectionDelay: 1000,
+    scrollBar: false,
+    easing: 'easeInOutCubic',
+    easingcss3: 'ease',
+    loopBottom: false,
+    loopTop: false,
+    loopHorizontal: true,
+    continuousVertical: false,
+    continuousHorizontal: false,
+    scrollHorizontally: false,
+    interlockedSlides: false,
+    dragAndMove: true,
+    offsetSections: false,
+    resetSliders: false,
+    fadingEffect: false,
+    normalScrollElements: '#element1, .element2',
+    scrollOverflow: false,
+    scrollOverflowReset: false,
+    scrollOverflowOptions: null,
+    touchSensitivity: 15,
+    normalScrollElementTouchThreshold: 5,
+    bigSectionsDestination: null,
+
+    //Accessibility
+    keyboardScrolling: true,
+    animateAnchor: true,
+    recordHistory: true,
+
+    //Design
+    controlArrows: true,
+    verticalCentered: true,
+    paddingTop: '0',
+    paddingBottom: '0',
+    fixedElements: '#header, .footer',
+    responsiveWidth: 0,
+    responsiveHeight: 0,
+    responsiveSlides: false,
+    parallax: false,
+    parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+    //Custom selectors
+    sectionSelector: '.section',
+    slideSelector: '.slide',
+
+    lazyLoading: true
   });
 
-  $('.prev').bind("touchstart click", function(e) {
-    $('.carousel.carousel-slider').carousel('prev');
-  });
-        
-  $('.toggle').bind("touchstart mousedown", function(e) {
-    e.preventDefault();
-  
-    var $this = $(this);
-  
-    if ($this.next().hasClass('show')) {
-        $this.next().removeClass('show');
-        $this.next().slideUp(350);
-    } else {
-        $this.parent().parent().find('li .inner').removeClass('show');
-        $this.parent().parent().find('li .inner').slideUp(350);
-        $this.next().toggleClass('show');
-        $this.next().slideToggle(350);
-    }
-  });
 });

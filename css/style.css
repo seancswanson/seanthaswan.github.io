@@ -1,6 +1,6 @@
 /* Global */
 html {
-  font-family: 'Roboto Slab', sans-serif !important;
+  font-family: 'Droid Serif', sans-serif !important;
 }
 
 body {
@@ -13,6 +13,24 @@ main {
   flex: 1 0 auto;
 }
 
+a {
+  color: white;
+}
+
+h1 {
+  font-size: 8vh !important;
+}
+
+h2 {
+  font-size: 4.5vh !important;
+}
+
+h3 {
+  font-size: 3vh !important;
+}
+p {
+  font-size: 2vmin !important;
+}
 ::-webkit-scrollbar {
   width: 5px;
 } 
@@ -40,11 +58,12 @@ nav {
 }
 
 nav ul a {
-  font-size: 18px !important;
+  font-size: 19px !important;
   letter-spacing: 4px !important;
   text-transform: uppercase;
   padding-left: 30px !important;
   padding-right: 30px !important; 
+  font-family: 'Oswald';
 }
 
 nav, .nav-wrapper {
@@ -69,6 +88,10 @@ a.dropdown-button > ul > li > i {
   color: #404040 !important;
   font-size: 20px;
   text-transform: lowercase !important;
+}
+
+.fa-bars {
+  color: white !important;
 }
 
 .side-nav li>a {
@@ -129,21 +152,56 @@ a.dropdown-button > ul > li > i {
 
 /*------------ Begin Intro ------------*/
 
-div.div--intro > div > div:nth-child(2){
-  margin-bottom: 0px !important;
+.landing {
+  background: #349fda;
 }
 
+#div--container__landing {
+  margin: 60px auto;
+  text-align: center;
+  max-width: 400px;
+  padding: 5px;
+  background: #349fda !important;
+}
+
+#div--container__landing h1{
+  margin: 0 0 5px 0!important;
+  color: white;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#div--container__landing h2 {
+  margin: 0 !important;
+  color: white;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#div--container__landing h3 {
+margin: 10px auto 15px auto !important;
+color: white;
+font-style: italic;
+letter-spacing: 1px;
+}
+
+#div--container__landing img{
+  max-width: 250px;
+  border-radius: 250px;
+  border: 5px solid black;
+}
 
 .button--social {
   text-transform: capitalize;
-  margin: 40px auto;
+  margin: 10px auto;
   display: block;
   background: rgba(255,255,255,1) !important;
   border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
   width: 335px !important;
-  padding: 10px;
   border: 2px solid rgba(255,255,255,.3);
   box-shadow: 0 2px 10px 0 rgba(255,255,255,.2);
   transition: box-shadow 500ms ease;
@@ -165,63 +223,16 @@ div.div--intro > div > div:nth-child(2){
   margin-right: 10px;
 }
 
-.div--intro {
-  width: 100%;
-  height: 100%;
-  background: #0288d1;
-  margin: 0;
-}
-
-.div--portrait {
-  text-align: center;
-  width: 300px;
-}
-
 .div--portrait img{
   border-radius: 300px !important;
   box-shadow: 0 5px 2px 2px rgba(255,255,255,.1);
 }
 
-.p--intro__title {
-  font-family: "Fjalla One";
-  font-size: 120px;
-  color: #f1c40f;
-  text-shadow: 2px 3px 1px rgba(255,255,255,.3);
-  text-transform: uppercase;
-  margin: 30px auto 10px auto;
-  line-height: 110px !important;
-  animation: fadeIn 300ms linear;
+.span--landing__orange {
+  color: #FFBB06;
+  font-size: 3.3vh !important;
 }
 
-.p--intro__title__name {
-  font-size: 60px;
-  margin: 0;
-  color: white;
-  font-family: "Fjalla One";
-  text-shadow: 2px 3px 1px rgba(241,196,15 ,.5);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 70px;
-  animation: fadeIn 900ms linear;
-
-}
-
-.p--intro__subtitle {
-  color: #f1c40f;
-  font-family: "Roboto Slab";
-  font-size: 33px;
-  font-weight: 400;
-  text-shadow: 1px 1px 2px rgba(255,255,255,.3);
-  margin: 10px auto;
-  line-height: 34px;
-  letter-spacing: 2px;
-  animation: fadeIn 900ms linear;
-}
-
-.span--social__link {
-  position: relative !important;
-  top: -4px !important;
-}
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -229,231 +240,235 @@ div.div--intro > div > div:nth-child(2){
 
 /*------------ Portfolio  Panel ------------*/
 
-.accordion {
-  background: rgba(255,255,255,.8);
-  border-radius: 3px;
-  width: 250px;
-  margin: 0 auto 30px auto;
+
+.div--container__slider {
+  text-align: center;
+  margin: 0 auto;
 }
 
-.inner {
-  overflow: hidden;
-  display: none;
-  color: black;
-  font-size: 14px;
-  padding: 5px;
-  background: rgba(255,255,255,.9) !important;
+.div--container__slider h1{
+  margin: 0 0 5px 0!important;
+  color: white;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-
-.carousel {
-  height: 900px !important;
+.div--container__slider h2{
+  margin: 0 !important;
+  color: white;
+  font-family: 'Droid Serif';
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-style: italic;
 }
 
-.carousel h2 {
-  font-size: 74px !important;
-  margin-top: 80px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-family: 'Fjalla One';
+.div--container__slider h3{
+  margin: 10px auto !important;
+  max-width: 600px;
+  padding: 5px 20px;
+  color: white;
+  font-family: 'Droid Serif';
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-style: italic;
 }
 
-.carousel h3 {
-  font-size: 32px !important;
-  font-family: "Roboto Slab";
-  margin-top: 30px;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-  font-weight: 700;
+.button--slider {
+  margin: 15px 10px;
+  width: 155px !important;
+  padding: 2px;
+  font-size: 15px !important;
+  display: inline;
+  text-transform: uppercase;
+}
+.button--slider span {
+  position: relative !important;
+  left: -3px;
+  top: -2px;
 }
 
-.next {
-  font-size: 80px !important;
-  color: rgba(255,255,255,.3);
-  position: absolute;
-  right:0;
-  top: -260px;
+.button--slider a {
+  color: rgb(46, 204, 113) !important;
 }
 
-.prev {
-  font-size: 80px !important;
-  color: rgba(255,255,255,.3);
-  position: absolute;
-  left:0;
-  top: -260px;
+.button--slider i {
+  position: relative !important;
+  top: 5px;
 }
-
 
 /*----------------- MNDF.LL PANEL ---------------------*/
 
-.div--carouselitem__mndfll {
-  background-color: #2ecc71;
+.mndfll {
+  background: #2ecc71;
   color: #404040 !important;
 }
 
-.div--mndfll__title {
-  background: #c1ffda08;
-  border-radius: 5px;
+.img--slider__mndfll {
+  margin: 0 auto;
+  max-width: 50vh !important;
+  box-shadow: 1px 1px 0px 1px rgba(60,60,60,.2);
+  display: block;
+  border-radius: 2px;
 }
 
-
-
-.img--screenshot__mndfll {
-  max-width: auto;
-  max-height: 400px!important;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px -3px black;
+.span--slider__orangish {
+  color: #FFC98C;
 }
-
 
 /*----------------- CHAIRMAN PANEL --------------------*/
 
-.h2--carousel__chairman {
-  line-height: 70px !important;
+.chairman {
+  background: black;
 }
 
-.img--screenshot__chairman {
-  max-width: auto;
-  max-height: 400px;
-  border-radius: 5px;
+.chairman .button--slider a{
+  color: black !important;
 }
 
+.img--slider__chairman {
+  margin: 0 auto;
+  max-width: 50vh !important;
+  display: block;
+  border-radius: 2px;
+}
 
 /*----------------- POKEDEX PANEL ---------------------*/
 
-.div--carouselitem__pokedex {
+.pokedex {
   background: #bb1541;
 }
 
-.img--screenshot__pokedex {
-  max-width: 700px !important;
-  max-height: auto;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px -3px black;
+.img--slider__pokedex {
+  margin: 0 auto;
+  max-width: 50vh !important;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 1px 1px 0px 1px rgba(116, 0, 31,.8);
 }
 
-/*----------------- VICTORY LIST PANEL ----------------*/
-
-.div--carouselitem__victorylist {
-  background: #3290BE;
+.pokedex .button--slider a{
+  color: #bb1541 !important;
 }
 
-.div--screenshot__victorylist {
-  width: 410px;
-  height: 500px;
-  background: #0288d1;
-  border-radius: 5px;
-  display: inline-block;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  box-shadow: 0 5px 15px -3px black;
-  text-align: initial !important;
+.span--slider__greenish {
+  color: #95E25F;
 }
 
-.img--screenshot__victorylist {
-  max-width: 380px;
-  height: auto;
-  border-radius: 3px;
-  padding: 4px 1px 0 5px;
+
+/*----------------- Hue PANEL ----------------*/
+
+.hue {
+  background: #226D70;
 }
 
-/*-------------- Accordion General ---------------------*/
-
-.accordion {
-  background: transparent;
-  border-radius: 3px;
-  width: 250px;
-  margin: 0 auto 30px auto;
+.hue .button--slider a {
+  color: #226D70 !important;
 }
 
-.accordion a {
-  font-size: 20px;
+.img--slider__hue {
+  margin: 0 auto;
+  max-width: 50vh !important;
+  display: block;
+  border-radius: 2px
 }
 
-.accordion li, ul {
-  background:transparent;
+.span--slider__yellow {
+  color: #FFE9BC;
 }
 
-.inner {
-  background: transparent !important;
-  font-family: "Fjalla One";
-  font-size: 20px;
+/*------------ About Me ------------*/
+
+.about_me {
+  background: #fdedd8;
+  text-align: center;
+  padding: 20px;
+}
+
+.about_me h1{
+  margin: 0 0 5px 0!important;
+  font-size: 6vh !important;
+  color: #5a7b5e;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about_me h1 span{
+  border-bottom: 4px double #5a7b5e;
+}
+
+.about_me h3 {
+  margin: 10px auto 15px auto !important;
+  color: #5a7b5e;
+  font-style: italic;
   letter-spacing: 2px;
-  padding: 5px; 
-  overflow: hidden;
-  display: none;
+  max-width: 500px;
 }
 
-.toggle {
-  font-size: 16px;
-  font-weight: 700;
-  font-family: "Roboto Slab";
+.about_me img {
+  max-width: 120px !important;
+  margin: 15px auto 5px auto;
+  animation-name: spin;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
 }
 
+.div--container__about {
+  margin-top: 70px;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
 
 /*------------ Contact Panel ------*/
 
-.div--contact {
-  background: #f1c40f;
-  width: 100%;
-  height: 100%;
+.contact {
+  background: #349fda;
+  color: white;
+  text-align: center;
 }
 
-.div--container__contact{
-  position: relative !important;
-  top: 30px;
-  margin-bottom: 200px;
+.contact h1{
+  margin: 0 0 5px 0!important;
+  color: white;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact h3 {
+  margin: 10px auto 15px auto !important;
+  color: white;
+  font-style: italic;
+  letter-spacing: 2px;
 }
 
 .img--contact__wave {
+  margin: 10px;
   max-width: 80px;
   -webkit-animation:rock 1s linear infinite;
   -moz-animation:rock 1s linear infinite;
   animation:rock 1s linear infinite;
 }
 
-.p--contact__social a {
-  font-size: 50px;
-  margin-right: 30px;
-  color: black;
-  position: relative !important;
-  top: -25px !important;
+.contact h3 i {
+  margin: 10px;
+  font-size: 30px;
 }
 
-.p--contact__email {
-  font-size: 25px;
-}
-
-.p--contact__email i{
-  font-size: 35px;
-  margin-right: 5px;
-  position: relative !important;
-  top: 4px !important;
-}
-
-.p--contact__phone {
-  font-size: 25px;
-  position: relative;
-  top: -15px;
-  letter-spacing: 2px;
-}
-
-.p--contact__phone i{
-  font-size: 60px;
-  margin-right: 4px;
-  position: relative !important;
-  top: 11px !important;
-} 
-
-.span--contact__contactme {
-  text-transform: uppercase;
-  font-family: "Fjalla One";
+.i--contact__social {
+  color: white;
   font-size: 50px !important;
-  border-bottom: 8px double black;
-  position: relative !important;
-  top: -20px;
-  left: 30px;
+  padding: 5px 10px;
+  border: 3px solid white;
+  border-radius: 18px;
 }
 
 
