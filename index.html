@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 	<title>Sean Swanson</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -37,7 +38,7 @@
 
 <main>
 <div id="fullpage" class="fullpage-wrapper">
-  <div data-anchor="hello_world" class="section landing">
+  <div data-anchor="hello_world" class="section landing fp-auto-height-responsive">
     <div id="div--container__landing">
       <h1>Hey there!</h1>
       <h2>I'm Sean Swanson:</h2>
@@ -54,7 +55,7 @@
     </div>
   </div>
 
-  <div data-anchor="portfolio" class="section">
+  <div data-anchor="portfolio" class="section fp-auto-height-responsive">
     <!-- MNDFLL -->
     <div class="slide mndfll">
       <div class="div--container__slider">
@@ -129,7 +130,8 @@
       </div>
     </div>
   </div>
-  <div data-anchor="about" class="section about_me">
+  <!-- About Me -->
+  <div data-anchor="about" class="section about_me fp-auto-height-responsive">
     <div class="div--container__about">
       <h1><span class="underline">About Me</span></h1>
       <img class="responsive-img" src="yinyang.png">
@@ -141,7 +143,8 @@
       <h3>The beautiful PNW.</h3>
     </div>
   </div>
-  <div data-anchor="get_in_touch" class="section contact">
+  <!-- Contact -->
+  <div data-anchor="get_in_touch" class="section contact fp-auto-height-responsive">
     <h1>Let's Talk</h1>
     <img class="img--contact__wave" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Twemoji2_1f44b-1f3fc.svg">
     <h3><i class="fa fa-envelope i--contact__email" aria-hidden="true"></i>seancswan@gmail.com</h3>
@@ -160,7 +163,6 @@
   </div>
 </footer>
 <!-- End Footer -->
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="./js/jquery.fullPage.js"></script>

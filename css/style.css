@@ -243,7 +243,6 @@ letter-spacing: 1px;
 
 .div--container__slider {
   text-align: center;
-  margin: 0 auto;
 }
 
 .div--container__slider h1{
@@ -330,7 +329,7 @@ letter-spacing: 1px;
   margin: 0 auto;
   max-width: 50vh !important;
   display: block;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 /*----------------- POKEDEX PANEL ---------------------*/
