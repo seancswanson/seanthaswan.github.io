@@ -62,4 +62,6 @@ $( document ).ready(function(){
     lazyLoading: true
   });
 
+    $(".button-collapse").sideNav();
+
 });
