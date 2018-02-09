@@ -30,7 +30,6 @@ $( document ).ready(function(){
     offsetSections: false,
     resetSliders: false,
     fadingEffect: false,
-    normalScrollElements: '#element1, .element2',
     scrollOverflow: false,
     scrollOverflowReset: false,
     scrollOverflowOptions: null,
@@ -61,6 +60,12 @@ $( document ).ready(function(){
 
     lazyLoading: true
   });
+
+   $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
 
     $(".button-collapse").sideNav();
 

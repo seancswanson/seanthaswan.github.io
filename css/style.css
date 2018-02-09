@@ -115,9 +115,6 @@ a.dropdown-button > ul > li > i {
   transition: border-bottom 500ms ease;
 }
 
-.nav--header__wide {
-
-}
 
 .navbar-fixed {
   height: 64px !important;
@@ -158,7 +155,7 @@ a.dropdown-button > ul > li > i {
 }
 
 #div--container__landing {
-  margin: 60px auto;
+  margin: 40px auto;
   text-align: center;
   max-width: 400px;
   padding: 5px;
@@ -182,10 +179,10 @@ a.dropdown-button > ul > li > i {
 }
 
 #div--container__landing h3 {
-margin: 10px auto 15px auto !important;
-color: white;
-font-style: italic;
-letter-spacing: 1px;
+  margin: 10px auto 15px auto !important;
+  color: white;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 #div--container__landing img{
@@ -223,14 +220,14 @@ letter-spacing: 1px;
   top: 4px;
 }
 
+#div--container__landing > button:nth-child(6) > a > i {
+  left: 4px !important;
+  top: 1px;
+}
+
 .button--social__icon {
   font-size: 35px !important;
   margin-right: 10px;
-}
-
-.div--portrait img{
-  border-radius: 300px !important;
-  box-shadow: 0 5px 2px 2px rgba(255,255,255,.1);
 }
 
 .span--landing__orange {
