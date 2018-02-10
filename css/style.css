@@ -124,20 +124,12 @@ a.dropdown-button > ul > li > i {
   font-family: "Fjalla One";
 }
 
-.ul--nav__links > li:nth-child(1) > a:hover {
+.ul--nav__links:hover {
   background: #404040;
 }
 
-.ul--nav__links > li:nth-child(2) > a:hover {
-  background: #404040;
-}
-
-.ul--nav__links > li:nth-child(3) > a:hover {
-  background: #404040;
-}
-
-.ul--nav__hover{
-  background: #404040;
+.ul--nav__links> li:nth-child(4):hover {
+  background: #ffa41b !important;
 }
 
 #sidenav-overlay {
@@ -150,8 +142,13 @@ a.dropdown-button > ul > li > i {
 
 /*------------ Begin Intro ------------*/
 
+
 .landing {
   background: #349fda;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 #div--container__landing {
@@ -310,7 +307,7 @@ a.dropdown-button > ul > li > i {
   max-width: 50vh !important;
   box-shadow: 1px 1px 0px 1px rgba(60,60,60,.2);
   display: block;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .span--slider__orangish {
@@ -344,7 +341,7 @@ a.dropdown-button > ul > li > i {
   margin: 0 auto;
   max-width: 50vh !important;
   display: block;
-  border-radius: 2px;
+  border-radius: 3px;
   box-shadow: 1px 1px 0px 1px rgba(116, 0, 31,.8);
 }
 
@@ -371,7 +368,8 @@ a.dropdown-button > ul > li > i {
   margin: 0 auto;
   max-width: 50vh !important;
   display: block;
-  border-radius: 2px
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px 1px rgba(60,60,60,.2);
 }
 
 .span--slider__yellow {
