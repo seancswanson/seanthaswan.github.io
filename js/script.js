@@ -2,7 +2,7 @@ $( document ).ready(function(){
 
   $('#fullpage').fullpage({
     lockAnchors: false,
-    anchors:['hello_world', 'portfolio', 'about' , 'get_in_touch' ],
+    anchors:['hello-world', 'portfolio', 'about' , 'get_in_touch' ],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
