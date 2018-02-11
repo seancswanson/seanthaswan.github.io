@@ -183,13 +183,13 @@ a.dropdown-button > ul > li > i {
 }
 
 #div--container__landing img{
-  max-width: 250px;
-  border-radius: 250px;
+  max-width: 220px;
+  border-radius: 100%;
   border: 5px solid black;
 }
 
 #div--container__landing p {
-  font-size: 1.75vh !important;
+  font-size: 2vh !important;
   margin: 5px auto 10px auto !important;
   color: white;
   font-style: italic;
