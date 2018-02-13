@@ -59,10 +59,10 @@ nav {
 
 nav ul a {
   font-size: 19px !important;
-  letter-spacing: 4px !important;
+  letter-spacing: 3px !important;
   text-transform: uppercase;
-  padding-left: 30px !important;
-  padding-right: 30px !important; 
+  padding-left: 20px !important;
+  padding-right: 20px !important; 
   font-family: 'Oswald';
 }
 
@@ -124,7 +124,16 @@ a.dropdown-button > ul > li > i {
   font-family: "Fjalla One";
 }
 
-.ul--nav__links:hover {
+#navlink1:hover {
+  background: #404040;
+}
+#navlink2:hover {
+  background: #404040;
+}
+#navlink3:hover {
+  background: #404040;
+}
+#navlink4:hover {
   background: #404040;
 }
 
