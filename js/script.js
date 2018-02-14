@@ -60,8 +60,7 @@ $(document).ready(function() {
     slideSelector: '.slide',
 
     lazyLoading: true,
-    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){var loadedSlide = $(this).find('img');loadedSlide.animate({ opacity: 1 });},
-    onLeave: function(index, nextIndex, direction){var loadedSlide = $(this).find('img');loadedSlide.animate({ opacity: 1 });},
+    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){var loadedSlide = $(this).find('img');loadedSlide.animate({ opacity: 1 });}
   });
 
   $('.button-collapse').sideNav({

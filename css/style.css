@@ -28,6 +28,9 @@ h2 {
 h3 {
   font-size: 2.7vh !important;
 }
+h4 {
+  font-size: 1.7vh !important;
+}
 p {
   font-size: 2vmin !important;
 }
@@ -138,12 +141,14 @@ a.dropdown-button > ul > li > i {
 #navlink3:hover {
   background: #404040;
 }
-#navlink4:hover {
-  background: #404040;
+#navlink4 {
+  background: #ffa41b;
+  box-shadow: 0px 5px 25px 3px rgba(255, 164, 27, 0);
+  transition: box-shadow 1s, background 1s;
 }
-
-.ul--nav__links> li:nth-child(4):hover {
-  background: #ffa41b !important;
+#navlink4:hover {
+  background: gold;
+  box-shadow: 0px 5px 25px 1px gold;
 }
 
 #sidenav-overlay {
@@ -173,7 +178,6 @@ a.dropdown-button > ul > li > i {
   max-width: 400px;
   padding: 5px;
   background: #349fda !important;
-  /*animation: 2s fadein;*/
 }
 
 #div--container__landing h1{
@@ -303,6 +307,17 @@ a.dropdown-button > ul > li > i {
   font-style: italic;
 }
 
+.div--container__slider h4{
+  margin: 10px auto !important;
+  max-width: 600px;
+  padding: 5px 20px;
+  color: white;
+  font-family: 'Droid Serif';
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
 .button--slider {
   margin: 15px 5px;
   width: 165px !important;
@@ -358,7 +373,7 @@ a.dropdown-button > ul > li > i {
 
 .img--slider__chairman {
   margin: 0 auto;
-  max-width: 55vh !important;
+  max-width: 50vh !important;
   display: block;
   border-radius: 3px;
 }
@@ -406,6 +421,11 @@ a.dropdown-button > ul > li > i {
 
 .span--slider__yellow {
   color: #FFE9BC;
+}
+
+.a--slider__group {
+  color: white !important;
+  text-decoration: underline !important;
 }
 
 /*------------ About Me ------------*/
