@@ -5,7 +5,7 @@ html {
 
 body {
   display: flex;
-  max-height: 100vh;
+  max-height: 99vh;
   flex-direction: column;
 }
 
@@ -84,6 +84,11 @@ a.dropdown-button > ul > li > i {
   font-size:30px;
 }
 
+.button-collapse i {
+  line-height: 65px !important;
+}
+
+
 .dropdown-content li>a, .dropdown-content li>span {
   color: #404040 !important;
   font-size: 20px;
@@ -93,6 +98,7 @@ a.dropdown-button > ul > li > i {
 .fa-bars {
   color: white !important;
 }
+
 
 .side-nav li>a {
   font-size: 18px !important;
@@ -153,7 +159,9 @@ a.dropdown-button > ul > li > i {
 
 
 .landing {
+  visibility: none;
   background: #349fda;
+  animation: 3s fadeIn;
 }
 
 .underline {
@@ -166,6 +174,7 @@ a.dropdown-button > ul > li > i {
   max-width: 400px;
   padding: 5px;
   background: #349fda !important;
+  /*animation: 2s fadein;*/
 }
 
 #div--container__landing h1{
@@ -222,7 +231,6 @@ a.dropdown-button > ul > li > i {
   padding: 0;
 }
 
-
 .button--social:hover {
   box-shadow: 0 2px 6px 0 rgba(255,255,255,1);
   transition: box-shadow 200ms ease;
@@ -235,8 +243,8 @@ a.dropdown-button > ul > li > i {
 }
 
 #div--container__landing > button:nth-child(6) > a > i {
-  left: 4px !important;
-  top: 1px;
+  top: 4px;
+  left: -25px;
 }
 
 .button--social__icon {
@@ -249,7 +257,10 @@ a.dropdown-button > ul > li > i {
   font-size: 3.3vh !important;
 }
 
-
+.span--social__resume {
+  position:relative;
+  right: 10px;
+}
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

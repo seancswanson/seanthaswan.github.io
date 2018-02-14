@@ -1,8 +1,9 @@
-$( document ).ready(function(){
+$(document).ready(function() {
+
 
   $('#fullpage').fullpage({
     lockAnchors: false,
-    anchors:['hello-world', 'portfolio', 'about' , 'get_in_touch' ],
+    anchors: ['hello-world', 'portfolio', 'about', 'get_in_touch'],
     navigation: false,
     navigationPosition: 'right',
     navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -15,7 +16,7 @@ $( document ).ready(function(){
     scrollingSpeed: 700,
     autoScrolling: false,
     fitToSection: true,
-    fitToSectionDelay: 1000,
+    fitToSectionDelay: 500,
     scrollBar: false,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
@@ -31,7 +32,7 @@ $( document ).ready(function(){
     resetSliders: false,
     fadingEffect: false,
     scrollOverflow: false,
-    scrollOverflowReset: true,
+    scrollOverflowReset: false,
     scrollOverflowOptions: null,
     touchSensitivity: 15,
     normalScrollElementTouchThreshold: 5,
@@ -52,7 +53,7 @@ $( document ).ready(function(){
     responsiveHeight: 0,
     responsiveSlides: false,
     parallax: false,
-    parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+    parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
 
     //Custom selectors
     sectionSelector: '.section',
@@ -61,12 +62,11 @@ $( document ).ready(function(){
     lazyLoading: true
   });
 
-   $('.button-collapse').sideNav({
-      menuWidth: 300, // Default is 240
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    }
-  );
+  $('.button-collapse').sideNav({
+    menuWidth: 300, // Default is 240
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+  });
 
-    $(".button-collapse").sideNav();
+  $(".button-collapse").sideNav();
 
 });
