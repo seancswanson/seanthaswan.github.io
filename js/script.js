@@ -10,6 +10,7 @@ $(document).ready(function() {
     showActiveTooltip: false,
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
+    sectionsColor: ['#349fda'],
 
     //Scrolling
     css3: true,

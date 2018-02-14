@@ -4,13 +4,20 @@ html {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-height: 99vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 a {
@@ -32,6 +39,7 @@ h4 {
   font-size: 1.7vh !important;
 }
 p {
+  font-size: 2vm !important;
   font-size: 2vmin !important;
 }
 ::-webkit-scrollbar {
@@ -109,8 +117,6 @@ a.dropdown-button > ul > li > i {
   letter-spacing: 3px;
   border-bottom: none;
   -webkit-transition: border-bottom 500ms ease;
-  -moz-transition: border-bottom 500ms ease;
-  -o-transition: border-bottom 500ms ease;
   transition: border-bottom 500ms ease;
 }
 
@@ -118,8 +124,6 @@ a.dropdown-button > ul > li > i {
   letter-spacing: 2px;
   border-bottom: 2px solid black;
   -webkit-transition: border-bottom 500ms ease;
-  -moz-transition: border-bottom 500ms ease;
-  -o-transition: border-bottom 500ms ease;
   transition: border-bottom 500ms ease;
 }
 
@@ -144,6 +148,7 @@ a.dropdown-button > ul > li > i {
 #navlink4 {
   background: #ffa41b;
   box-shadow: 0px 5px 25px 3px rgba(255, 164, 27, 0);
+  -webkit-transition: box-shadow 1s, background 1s;
   transition: box-shadow 1s, background 1s;
 }
 #navlink4:hover {
@@ -163,9 +168,7 @@ a.dropdown-button > ul > li > i {
 
 
 .landing {
-  visibility: none;
   background: #349fda;
-  animation: 3s fadeIn;
 }
 
 .underline {
@@ -178,6 +181,7 @@ a.dropdown-button > ul > li > i {
   max-width: 400px;
   padding: 5px;
   background: #349fda !important;
+
 }
 
 #div--container__landing h1{
@@ -228,6 +232,7 @@ a.dropdown-button > ul > li > i {
   width: 250px !important;
   border: 2px solid rgba(255,255,255,.3);
   box-shadow: 0 2px 10px 0 rgba(255,255,255,.2);
+  -webkit-transition: box-shadow 500ms ease;
   transition: box-shadow 500ms ease;
   text-shadow: 0 0 0 rgba(255,255,255,.4);
   line-height: 40px;
@@ -236,6 +241,7 @@ a.dropdown-button > ul > li > i {
 
 .button--social:hover {
   box-shadow: 0 2px 6px 0 rgba(255,255,255,1);
+  -webkit-transition: box-shadow 200ms ease;
   transition: box-shadow 200ms ease;
 }
 
@@ -266,7 +272,6 @@ a.dropdown-button > ul > li > i {
 }
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 /*------------ Portfolio  Panel ------------*/
@@ -456,16 +461,31 @@ a.dropdown-button > ul > li > i {
 .about_me img {
   max-width: 120px !important;
   margin: 15px auto 5px auto;
-  animation: spin 5s infinite linear;
+  -webkit-animation: spin 5s infinite linear;
+          animation: spin 5s infinite linear;
+}
+
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
+    }
+    to {
+        -webkit-transform:rotate(-360deg);
+                transform:rotate(-360deg);
+    }
 }
 
 
 @keyframes spin {
     from {
-        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+                transform:rotate(0deg);
     }
     to {
-        transform:rotate(-360deg);
+        -webkit-transform:rotate(-360deg);
+                transform:rotate(-360deg);
     }
 }
 
@@ -495,7 +515,6 @@ a.dropdown-button > ul > li > i {
   margin: 10px;
   max-width: 80px;
   -webkit-animation:rock 1s linear infinite;
-  -moz-animation:rock 1s linear infinite;
   animation:rock 1s linear infinite;
 }
 
