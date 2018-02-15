@@ -46,7 +46,6 @@ p {
   width: 5px;
 } 
 
-
 ::-webkit-scrollbar-track {
       background-color: rgba(0,0,0,.2);
 } /* the new scrollbar will have a flat appearance with the set background color */
@@ -55,7 +54,6 @@ p {
       background-color: rgba(255,255,255,.5); 
 } /* this will style the thumb, ignoring the track */
  
-
 .white-text-large {
   color: white;
   position: relative;
@@ -127,7 +125,6 @@ a.dropdown-button > ul > li > i {
   transition: border-bottom 500ms ease;
 }
 
-
 .navbar-fixed {
   height: 64px !important;
 }
@@ -146,13 +143,14 @@ a.dropdown-button > ul > li > i {
   background: #404040;
 }
 #navlink4 {
-  background: #ffa41b;
+  background: #FFBB06;
   box-shadow: 0px 5px 25px 3px rgba(255, 164, 27, 0);
   -webkit-transition: box-shadow 1s, background 1s;
   transition: box-shadow 1s, background 1s;
 }
 #navlink4:hover {
-  background: gold;
+  background: #FFBB06;
+  opacity: 1 !important;
   box-shadow: 0px 5px 25px 1px gold;
 }
 
@@ -181,6 +179,7 @@ a.dropdown-button > ul > li > i {
   max-width: 400px;
   padding: 5px;
   background: #349fda !important;
+  opacity: 0;
 
 }
 
@@ -448,11 +447,12 @@ a.dropdown-button > ul > li > i {
   font-family: 'Oswald';
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 .about_me h3 {
   margin: 10px auto 15px auto !important;
-  color: #5a7b5e;
+  color: #404040;
   font-style: italic;
   letter-spacing: 2px;
   max-width: 500px;
@@ -464,7 +464,6 @@ a.dropdown-button > ul > li > i {
   -webkit-animation: spin 5s infinite linear;
           animation: spin 5s infinite linear;
 }
-
 
 @-webkit-keyframes spin {
     from {
@@ -498,12 +497,15 @@ a.dropdown-button > ul > li > i {
 }
 
 .contact h1{
-  margin: 0 0 25px 0!important;
+  padding: 15px;
+  margin: 0 auto 5px auto!important;
   color: white;
   font-family: 'Oswald';
   text-transform: uppercase;
   letter-spacing: 1px;
+  max-width: 800px;
 }
+
 .contact h3 {
   margin: 10px auto 15px auto !important;
   color: white;
@@ -520,7 +522,17 @@ a.dropdown-button > ul > li > i {
 
 .contact h3 i {
   margin: 10px;
-  font-size: 30px;
+  position: relative;
+  top: 5px;
+}
+
+h3 .i--contact__email {
+  font-size: 30px !important;
+}
+
+h3 .i--contact__phone {
+  font-size: 45px;
+  top: 10px !important;
 }
 
 .i--contact__social {

@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var landing = $('#div--container__landing');
+    landing.animate({ opacity: 1 });
 
   $('#fullpage').fullpage({
     lockAnchors: false,
@@ -61,7 +63,7 @@ $(document).ready(function() {
     slideSelector: '.slide',
 
     lazyLoading: true,
-    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){var loadedSlide = $(this).find('img');loadedSlide.animate({ opacity: 1 });}
+    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){var loadedSlide = $(this).find('img');loadedSlide.animate({ opacity: 1 });},
   });
 
   $('.button-collapse').sideNav({
