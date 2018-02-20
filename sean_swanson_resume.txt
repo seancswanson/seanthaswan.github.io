@@ -5,10 +5,7 @@ WEB DEVELOPER
 
 ## Contact
 
-Full-stack web developer obsessed with beauty and utility in tech. My optimism and tenacity to
-pursue excellence motivates my approach to ﬁnding solutions that result in the most net value
-for users. My baccalaureate education in philosophy, history in leadership, and time spent
-practicing the arts has encouraged taking a holistic approach to any encountered challenges.
+I am an optimistic full-stack web developer obsessed with beauty and utility in tech. My tenacity to pursue excellence in all facets of life motivates my methods of creative problem solving resulting in applications that are fulfilling and useful. The education I sought in philosophy, history in leadership, and time spent practicing the arts places me at an intersection that informs how I approach my role as a builder and a designer. 
 
 - seancswan@gmail.com
 - seancswan.com
@@ -18,23 +15,6 @@ practicing the arts has encouraged taking a holistic approach to any encountere
 - github.com/seanthaswan
 
 ## Employment
-
-+General Assembly
-
-Seattle, WA
-
-Web Developer
-480+ hour program dedicated to creating full stack web applications both individually and
-within a team environment using the following languages and frameworks:
-- Javascript/ES6
-- React.js
-- Node.js
-- Express.js
-- HTML5
-- CSS3
-- MongoDB
-- PostgreSQL
-- Python/Django
 
 +DERU Market
 
@@ -83,9 +63,17 @@ Education
 General Assembly
 
 Full-Stack Web Development 2018
-480+ Hour Immersive Style Coding Bootcamp
-with a focus on MERN Stack Nov. 2017-Feb.
-2018
+480+ hour immserive style coding bootcamp dedicated to creating full stack web applications both individually and
+within a team environment using the following languages and frameworks:
+- Javascript/ES6
+- React.js
+- Node.js
+- Express.js
+- HTML5
+- CSS3
+- MongoDB
+- PostgreSQL
+- Python/Django
 
 University of Washington
 B.A. Philosophy 2015
