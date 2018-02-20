@@ -1,0 +1,108 @@
+SEAN SWANSON
+WEB DEVELOPER
+
+# Summary
+
+## Contact
+
+Full-stack web developer obsessed with beauty and utility in tech. My optimism and tenacity to
+pursue excellence motivates my approach to ﬁnding solutions that result in the most net value
+for users. My baccalaureate education in philosophy, history in leadership, and time spent
+practicing the arts has encouraged taking a holistic approach to any encountered challenges.
+
+- seancswan@gmail.com
+- seancswan.com
+- (425)458-8778
+- Seattle, WA
+- linkedin.com/in/seancswanson
+- github.com/seanthaswan
+
+## Employment
+
++General Assembly
+
+Seattle, WA
+
+Web Developer
+480+ hour program dedicated to creating full stack web applications both individually and
+within a team environment using the following languages and frameworks:
+- Javascript/ES6
+- React.js
+- Node.js
+- Express.js
+- HTML5
+- CSS3
+- MongoDB
+- PostgreSQL
+- Python/Django
+
++DERU Market
+
+Kirkland, WA
+
+Hospitality Specialist
+Mar 2014 to Nov 2017, Mar 2014 to Nov 2017
+Server/Maitre'd at chef-prepared, farm-to-table restaurant. Cultivated strong leadership and
+team building skills imperative to succeed in it's very fast-paced and high-volume environment.
+Created and maintained strong client relationships in virtue of our mission statement.
+
++Fashion Model
+
+International
+
+Sep 2012 to Current
+
+TCM Models/ State MGMT / Major Models
+Runway, Fashion Editorial, Fitness board model.
+Walked in New York Fashion Week:
+-Men's Summer 2015
+-Men's Winter 2016
+-Men's Summer 2016
+Clients include:
+Nordstrom, Adidas, Bellevue Square/Kemper Development, Ketch Boutique, CHOKE T-shirts,
+Neiman Marcus, Mario's Seattle, Butch Blum, Microsoft, AIS, Loris Diran, Pyer Moss, Edmond
+Ooi, Palmier Du Mal, Malan Breton, David Hart, HARTXSHAFFNERXMARX, Spencer's Gifts 
+
+## Projects
++Chairman of the Board
+A retro corporate ladder simulator game, à la Oregon Trail. Created with HTML5, CSS3,
+JavaScript/jQuery
+
++mndf.ll
+A full-stack daily journal and goal tracking app for cultivating an enriched life featuring user
+auth, external API and database utilization.
+
++Hue
+A MERN-stack color detection utility for designers featuring cloud uploading and asynchronous
+operations. 
+
++PokèDex
+A PEN-stack Pokémon encyclopedia as a study of RESTful API architecture and artistic design.
+
+Education
+General Assembly
+
+Full-Stack Web Development 2018
+480+ Hour Immersive Style Coding Bootcamp
+with a focus on MERN Stack Nov. 2017-Feb.
+2018
+
+University of Washington
+B.A. Philosophy 2015
+
+Concentration in ethics, metaphysics, and
+philosophy of art (aesthetics).
+
+Bellevue College
+A.A. 2013
+
+Graduated concurrently with my High School
+Diploma thru the Running Start program.
+
+Skills
+Semantically Written HTML5, CSS3, JavaScript/ES6,
+jQuery, Responsive Design & CSS Frameworks, JSON,
+RESTful APIs, MERN-Stack, MongoDB, Express.js,
+React.js, Node.js, Git, Github, PostgreSQL
+
+

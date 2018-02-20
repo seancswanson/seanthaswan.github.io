@@ -458,6 +458,14 @@ a.dropdown-button > ul > li > i {
   max-width: 500px;
 }
 
+.about_me p {
+  margin: 10px auto 15px auto !important;
+  color: #404040;
+  font-style: italic;
+  letter-spacing: 1px;
+  max-width: 600px;
+}
+
 .about_me img {
   max-width: 120px !important;
   margin: 15px auto 5px auto;
