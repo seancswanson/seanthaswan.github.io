@@ -68,9 +68,9 @@ $(document).ready(function() {
 
   $('.button-collapse').sideNav({
     menuWidth: 300, // Default is 240
-    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-  });
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    onClose: function(){document.body.style.overflow="visible"}
+  })
 
-  $(".button-collapse").sideNav();
 
 });
