@@ -38,10 +38,7 @@ h3 {
 h4 {
   font-size: 1.7vh !important;
 }
-p {
-  font-size: 2vm !important;
-  font-size: 2vmin !important;
-}
+
 ::-webkit-scrollbar {
   width: 5px;
 } 
@@ -149,7 +146,6 @@ a.dropdown-button > ul > li > i {
   transition: box-shadow 1s, background 1s;
 }
 #navlink4:hover {
-  background: #FFBB06;
   opacity: 1 !important;
   box-shadow: 0px 5px 25px 1px gold;
 }
@@ -170,13 +166,13 @@ a.dropdown-button > ul > li > i {
 }
 
 .underline {
-  text-decoration: underline;
+  letter-spacing: 2px;
 }
 
 #div--container__landing {
   margin: 80px auto;
   text-align: center;
-  max-width: 400px;
+  max-width: 500px;
   padding: 5px;
   background: #349fda !important;
   opacity: 0;
@@ -213,13 +209,22 @@ a.dropdown-button > ul > li > i {
 }
 
 #div--container__landing p {
-  font-size: 2vh !important;
-  margin: 5px auto 10px auto !important;
+  font-size: 2vh;
+  margin: 5px auto 5px auto !important;
   color: white;
-  font-style: italic;
-  letter-spacing: 2px;
+  font-weight: bold ;
+  letter-spacing: 1px;
+  overflow: hidden !important;
 }
 
+.p--landing__skills {
+  font-style: italic;
+  background:rgba(0,0,0,.1);
+  color: white !important;
+  padding: 5px 10px; 
+  border-radius: 3px;
+  width: 150px;
+}
 .button--social {
   text-transform: capitalize;
   margin: 10px auto;
@@ -433,6 +438,15 @@ a.dropdown-button > ul > li > i {
 }
 
 /*------------ About Me ------------*/
+.div--container__about .col{
+  margin-top: 20px;
+}
+
+.div--container__about ul li {
+  font-size: 2.5vh;
+  font-style: italic;
+  letter-spacing: 1px;
+}
 
 .about_me {
   background: #fdedd8;
@@ -441,7 +455,7 @@ a.dropdown-button > ul > li > i {
 }
 
 .about_me h1{
-  margin: 0 0 5px 0!important;
+  margin: 0 0 10px 0!important;
   font-size: 6vh !important;
   color: #5a7b5e;
   font-family: 'Oswald';
@@ -450,27 +464,23 @@ a.dropdown-button > ul > li > i {
   text-decoration: underline;
 }
 
-.about_me h3 {
-  margin: 10px auto 15px auto !important;
-  color: #404040;
-  font-style: italic;
-  letter-spacing: 2px;
-  max-width: 500px;
-}
-
-.about_me p {
-  margin: 10px auto 15px auto !important;
-  color: #404040;
-  font-style: italic;
-  letter-spacing: 1px;
-  max-width: 600px;
-}
 
 .about_me img {
   max-width: 120px !important;
   margin: 15px auto 5px auto;
   -webkit-animation: spin 5s infinite linear;
           animation: spin 5s infinite linear;
+}
+
+#h1--about__frontend {
+  font-size: 3.7vh !important;
+  color: #030202;
+}
+
+#h1--about__backend {
+  font-size: 3.7vh !important;
+  color: #030202;
+  position
 }
 
 @-webkit-keyframes spin {
@@ -549,6 +559,18 @@ h3 .i--contact__phone {
   padding: 5px 10px;
   border: 3px solid white;
   border-radius: 18px;
+}
+
+#i--contact__resume {
+  color: #FFBB06;
+  border: 3px solid #FFBB06;
+}
+
+#span--contact__pdf {
+  color: #FFBB06;
+  font-size: 13px;
+  position:relative;
+  right: 60px;
 }
 
 

@@ -7,7 +7,7 @@ $(document).ready(function() {
     lockAnchors: false,
     anchors: ['hello-world', 'portfolio', 'about', 'get_in_touch'],
     navigation: false,
-    navigationPosition: 'right',
+    navigationPosition: 'top',
     navigationTooltips: ['firstSlide', 'secondSlide'],
     showActiveTooltip: false,
     slidesNavigation: true,
@@ -65,6 +65,14 @@ $(document).ready(function() {
     lazyLoading: true,
     afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){var loadedSlide = $(this).find('img');loadedSlide.animate({ opacity: 1 });},
   });
+
+  var tech = ['React.JS', 'JavaScript', 'Express', 'Python', 'Django', 'PostgreSQL', 'MongoDB'];
+
+  var change = setInterval(function() {
+    var randomNumber = Math.round( Math.random() * (tech.length-1) );
+    $('.p--landing__skills').text(tech[randomNumber]);
+  }, 1400);
+
 
   $('.button-collapse').sideNav({
     menuWidth: 300, // Default is 240
