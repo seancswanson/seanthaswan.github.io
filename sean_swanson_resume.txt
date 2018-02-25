@@ -21,18 +21,18 @@ I am an optimistic full-stack web developer obsessed with beauty and utility in 
 Kirkland, WA
 
 Hospitality Specialist
-Mar 2014 to Nov 2017, Mar 2014 to Nov 2017
+Mar 2014 to Nov 2017
 Server/Maitre'd at chef-prepared, farm-to-table restaurant. Cultivated strong leadership and
 team building skills imperative to succeed in it's very fast-paced and high-volume environment.
 Created and maintained strong client relationships in virtue of our mission statement.
 
-+Fashion Model
++TCM Models
 
-International
+Fashion Model
 
 Sep 2012 to Current
 
-TCM Models/ State MGMT / Major Models
+State MGMT / Major Models
 Runway, Fashion Editorial, Fitness board model.
 Walked in New York Fashion Week:
 -Men's Summer 2015
@@ -45,19 +45,18 @@ Ooi, Palmier Du Mal, Malan Breton, David Hart, HARTXSHAFFNERXMARX, Spencer's Gif
 
 ## Projects
 +Chairman of the Board
-A retro corporate ladder simulator game, à la Oregon Trail. Created with HTML5, CSS3,
-JavaScript/jQuery
+A humorous & retro corporate ladder simulator game, à la Oregon Trail. Inspiration came from a game my father programmed in GW Basic back in the 80's with the aim of creating a fun, tongue-in-cheek, learning experience for young adults. The most fun part of the process involved breaking into and deciphering code written in a deprecated language and working to translate the functionality to JavaScript! In conjunction with the code, the design process that followed birthed several ideas for the retro-inspired interface. After finding an open-source graphics pack containing old assets from the Macintosh Hypercard system I knew I had accurately captured the look and feel. I designed and built Chairman of the Board with HTML5, CSS3, JavaScript/jQuery.
 
 +mndf.ll
-A full-stack daily journal and goal tracking app for cultivating an enriched life featuring user
-auth, external API and database utilization.
+A full-stack daily journal and goal tracking app for cultivating an enriched life featuring user auth, external API, and database utilization. I took this project as an opportunity to build out and design the functionality of a component I will be integrating into a larger pet project. Creating this project was extremely fulfilling because personal development is a prime virtue in my life and journaling is an important part of that practice. What I learned from this project as far as how front-end interfaces talk with databases as well as how a user gets created and authenticated was something that I will take to just about every project in the future.
 
 +Hue
-A MERN-stack color detection utility for designers featuring cloud uploading and asynchronous
-operations. 
+A MERN-stack color detection utility for designers featuring cloud uploading and asynchronous operations created by myself, Jade Rosse, Desiree Rainey. This was the first full-stack project I developed with a group which proved to be a valuable learning experience in a few ways. In addition to not having much experience working with other developers, we were a group who also came to the table without much history toying with React- this made communication crucial and drove us to pair program a majority of the sprints. The idea behind Hue came from my frequent use and reverence (seriously, color schemes are underappreciated) of similar utilities found online like Adobe Color or Palleton. As an exercise working with the MERN-stack this extensively, it proved rewarding and challenging. Those
+challenges, however, were solved exponentially quicker with my well-coordinated group!
 
 +PokèDex
-A PEN-stack Pokémon encyclopedia as a study of RESTful API architecture and artistic design.
+A PEN-stack Pokémon encyclopedia as a study of RESTful API architecture and artistic design. We were tasked with creating this pokedex over a very poorly timed holiday break during my immersive program which meant we had to get creative about where and how we scoured for resources about technologies that we were only recently introduced to. The encyclopedia was an excellent practice in time- management and reading the documentation associated with API's and unfamiliar technologies. Designing this app was an absolute blast- I wanted to flex my CSS skills and design sensibilities to bring to life an awesome universe that I grew up with.
+
 
 Education
 General Assembly
