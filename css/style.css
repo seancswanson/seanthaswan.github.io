@@ -438,9 +438,6 @@ a.dropdown-button > ul > li > i {
 }
 
 /*------------ About Me ------------*/
-.div--container__about .col{
-  margin-top: 20px;
-}
 
 .div--container__about ul li {
   font-size: 2.5vh;
@@ -464,10 +461,9 @@ a.dropdown-button > ul > li > i {
   text-decoration: underline;
 }
 
-
 .about_me img {
   max-width: 120px !important;
-  margin: 15px auto 5px auto;
+  margin: 15px auto 0px auto;
   -webkit-animation: spin 5s infinite linear;
           animation: spin 5s infinite linear;
 }
@@ -475,12 +471,15 @@ a.dropdown-button > ul > li > i {
 #h1--about__frontend {
   font-size: 3.7vh !important;
   color: #030202;
+  position: relative;
+  top: 5px;
 }
 
 #h1--about__backend {
   font-size: 3.7vh !important;
   color: #030202;
-  position
+  position: relative;
+  top: 5px;
 }
 
 @-webkit-keyframes spin {
