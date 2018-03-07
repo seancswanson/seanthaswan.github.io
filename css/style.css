@@ -147,6 +147,7 @@ a.dropdown-button > ul > li > i {
 }
 #navlink4:hover {
   opacity: 1 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   box-shadow: 0px 5px 25px 1px gold;
 }
 
@@ -176,6 +177,7 @@ a.dropdown-button > ul > li > i {
   padding: 5px;
   background: #349fda !important;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 
 }
 
@@ -265,6 +267,10 @@ a.dropdown-button > ul > li > i {
   margin-right: 10px;
 }
 
+.fa-id-card-o {
+  right: 24px;
+}
+
 .span--landing__orange {
   color: #FFBB06;
   font-size: 3.3vh !important;
@@ -275,13 +281,14 @@ a.dropdown-button > ul > li > i {
   right: 10px;
 }
 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn { from { opacity:0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } to { opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; } }
+@keyframes fadeIn { from { opacity:0; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } to { opacity:1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; } }
 
 /*------------ Portfolio  Panel ------------*/
 
 .slide img {
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
 .div--container__slider {
@@ -364,6 +371,7 @@ a.dropdown-button > ul > li > i {
   display: block !important;
   border-radius: 3px;
   opacity: 1 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .span--slider__orangish {
