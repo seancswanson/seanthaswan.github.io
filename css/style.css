@@ -286,6 +286,27 @@ a.dropdown-button > ul > li > i {
 
 /*------------ Portfolio  Panel ------------*/
 
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+  height: 15px !important;
+  width: 15px !important;
+  background: rgba(255,255,255,1) !important;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  height: 8px !important;
+  width: 8px !important;
+  border: 2px solid black !important;
+  background: rgba(255,255,255,.6) !important;
+  padding: 4px;
+}
+
+
+.fp-slidesNav {
+  position: relative !important;
+  top: -45px;
+  text-align: center;
+}
+
 .slide img {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
