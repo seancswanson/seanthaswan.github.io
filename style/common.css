@@ -101,11 +101,11 @@ html {
 
 @font-face {
     font-family: pixel;
-    src: url('https://cdn.glitch.com/f2c169f2-bca5-447d-afad-8266594111f2%2FNouveau_IBM.ttf?1531834726586');
+    src: url('../assets/Nouveau_IBM.ttf');
 }
 
 body {
-    font-family: pixel;
+    font-family: pixel, system;
     min-height: 100%;
     margin: 0;
 }
