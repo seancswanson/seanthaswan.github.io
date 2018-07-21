@@ -1,0 +1,91 @@
+/* Tablet? */
+
+@media screen and (max-width: 650px) {
+    div.main-portfolio-title pre {
+        font-size: 8px;
+    }
+    div.card {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+.nav-link:nth-child(3) {
+    color: white;
+    background: #06d6a0;
+}
+
+.main-content-container {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.main-portfolio-title {
+    max-width: 580px;
+    padding: 4px;
+    color: white;
+    border-radius: 5px;
+    background: #44998f;
+}
+
+.main-portfolio-title pre {
+    font-family: 'pixel';
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.main-portfolio-link {
+    color: white;
+}
+
+/* Cards */
+
+.card {
+    display: inline-block;
+    width: 275px;
+    height: auto;
+    margin-top: 20px;
+    vertical-align: top;
+    border: 4px double rgba(255, 255, 255, .9);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .3);
+}
+
+.card-image-container {
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.card-image {
+    width: 100%;
+    background: white;
+}
+
+.card-info {
+    width: 100%;
+    margin: -19px auto 0 auto;
+    padding: 7px;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+}
+
+.card-title {
+    padding: 10px;
+}
+
+.card-tech-badge {
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 2px 1px;
+    padding: 5px 7px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+}
