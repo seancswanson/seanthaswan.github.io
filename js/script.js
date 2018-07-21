@@ -1,7 +1,6 @@
 (function() {
 
   window.swanson = {
-
     // ----------
     init: function() {
       this.$textBox = $(document).find('.main-home-textbox');
