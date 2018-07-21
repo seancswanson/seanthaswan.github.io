@@ -1,290 +1,70 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
+  <title>Sean Swanson | Web Developer</title>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="format-detection" content="telephone=no">
-  <title>Sean Swanson</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Droid+Serif:400,700italic" rel="stylesheet" type="text/css"
-  />
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/home.css">
 </head>
 
 <body>
-
-  <!-- BEGIN NAV -->
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#hello-world" class="brand-logo">
-          <img src='swansong.png'>
-        </a>
-        <ul class="ul--nav__links right hide-on-med-and-down">
-          <li id="navlink1">
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li id="navlink2">
-            <a href="#about">About</a>
-          </li>
-          <li id="navlink3">
-            <a href="#get_in_touch">Contact</a>
-          </li>
-          <li id="navlink4">
-            <a target="_blank" href="sean_swanson_resume.pdf">Résumé</a>
-          </li>
-        </ul>
-        <a href="#" data-activates="mobile-demo" class="button-collapse">
-          <i class="fa fa-bars"></i>
-        </a>
-        <ul class="side-nav" id="mobile-demo">
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#get_in_touch">Contact</a>
-          </li>
-          <li>
-            <a target="_blank" href="sean_swanson_resume.pdf">Résumé</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <!-- END NAV -->
-
-  <main>
-    <div id="fullpage" class="fullpage-wrapper">
-      <div data-anchor="hello-world" class="section landing fp-auto-height-responsive">
-        <div id="div--container__landing">
-          <h1>Hey there!</h1>
-          <h2>I'm Sean Swanson:</h2>
-          <h3>an optimistic
-            <span class="span--landing__orange">full-stack</span> web developer obsessed with
-            <span class="span--landing__orange">beauty</span>,
-            <span class="span--landing__orange">design</span>, and
-            <span class="span--landing__orange">functionality</span> in tech.</h3>
-          <p>Designing and building with
-            <p class="p--landing__skills">Node.JS</p>
-          </p>
-          <img class="center-block responsive-img lighten-2" src='nobg2.png' border='0' alt="logo" />
-          <a target="_blank" href="sean_swanson_resume.pdf">
-            <button class="button--social">
-              <i class="fa fa-id-card-o button--social__icon"></i>
-              <span class="span--social__resume ">VIEW RÉSUMÉ</span>
-            </button>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/seancswanson/">
-            <button class="button--social">
-              <i class="fa fa-linkedin button--social__icon"></i>
-              <span class="span--social__link">CONNECT ON LINKEDIN</span>
-            </button>
-          </a>
-          <a target="_blank" href="https://github.com/seanthaswan">
-            <button class="button--social">
-              <i class="fa fa-github button--social__icon"></i>
-              <span class="span--social__link">EXPLORE MY GITHUB</span>
-            </button>
-          </a>
-        </div>
-      </div>
-
-      <div data-anchor="portfolio" class="section fp-auto-height-responsive">
-        <!-- MNDFLL -->
-        <div class="slide mndfll">
-          <div class="div--container__slider">
-            <a target="_blank" href="https://mndfll-js.herokuapp.com" class="">
-              <h1>mndf.ll</h1>
-            </a>
-            <h3>A
-              <span class="span--slider__orangish">full-stack</span> daily journaling & goal tracking app featuring
-              <span class="span--slider__orangish">user auth</span> and
-              <span class="span--slider__orangish">database utilization</span>.</h3>
-            <img class="responsive-img img--slider__mndfll" src="mndfll.png">
-            <a target="_blank" href="https://github.com/seanthaswan/mndfll">
-              <button class="button--social button--slider">
-                <i class="fa fa-github button--social__icon"></i>
-                <span class="span--social__link">GitHub Repo</span>
-              </button>
-            </a>
-            <a target="_blank" href="https://mndfll-js.herokuapp.com">
-              <button class="button--social button--slider">
-                <i class="fa fa-globe button--social__icon"></i>
-                <span class="span--social__link">Live Site</span>
-              </button>
-            </a>
-          </div>
-        </div>
-        <!-- Chairman of the Board -->
-        <div class="slide chairman">
-          <div class="div--container__slider">
-            <a target="_blank" href="http://seancswanson.com/chairman-of-the-board" class="">
-              <h1>Chairman Of The Board</h1>
-            </a>
-            <h3>A retro front-end corporate ladder simulator game.</h3>
-            <img class="responsive-img img--slider__chairman" data-src="chairman.png">
-            </a>
-            <a target="_blank" href="https://github.com/seanthaswan/chairman-of-the-board">
-              <button class="button--social button--slider">
-                <i class="fa fa-github button--social__icon"></i>
-                <span class="span--social__link">GitHub Repo</span>
-              </button>
-            </a>
-            <a target="_blank" href="http://seancswanson.com/chairman-of-the-board">
-              <button class="button--social button--slider">
-                <i class="fa fa-globe button--social__icon"></i>
-                <span class="span--social__link">Live Site</span>
-              </button>
-            </a>
-          </div>
-        </div>
-        <!-- Hue -->
-        <div class="slide hue">
-          <div class="div--container__slider">
-            <a target="_blank" href="https://use-hue.herokuapp.com" class="">
-              <h1>HUE</h1>
-            </a>
-            <h3>A
-              <span class="span--slider__yellow">MERN-stack</span> color detection utility for designers featuring
-              <span class="span--slider__yellow">cloud uploading</span> &
-              <span class="span--slider__yellow">asynchronous operations</span>.</h3>
-            <h4>A group project starring
-              <a href="#" class="a--slider__group">Jade Rosse</a>,
-              <a href="#" class="a--slider__group">Desiree Rainey</a>
-            </h4>
-            <img class="responsive-img img--slider__hue" data-src="hue.png">
-            </a>
-            <a target="_blank" href="https://github.com/seanthaswan/hue-project3">
-              <button class="button--social button--slider">
-                <i class="fa fa-github button--social__icon"></i>
-                <span class="span--social__link">GitHub Repo</span>
-              </button>
-            </a>
-            <a target="_blank" href="https://use-hue.herokuapp.com">
-              <button class="button--social button--slider">
-                <i class="fa fa-globe button--social__icon"></i>
-                <span class="span--social__link">Live Site</span>
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- PokèDex -->
-        <div class="slide pokedex">
-          <div class="div--container__slider">
-            <a href="#" class="">
-              <h1>PokèDex</h1>
-            </a>
-            <h3>A
-              <span class="span--slider__greenish">PEN-stack</span> Pokèmon encyclopedia as a study of
-              <span class="span--slider__greenish">RESTful API architecture</span> and artistic
-              <span class="span--slider__greenish">design</span>.</h3>
-            <img class="responsive-img img--slider__pokedex" data-src="pokedex.png">
-            <a target="_blank" href="https://github.com/seanthaswan/express-pokedex">
-              <button class="button--social button--slider">
-                <i class="fa fa-github button--social__icon"></i>
-                <span class="span--social__link">GitHub Repo</span>
-              </button>
-            </a>
-            <!--         <button class="button--social button--slider">
-          <a href="#">
-          <i class="fa fa-globe button--social__icon"></i><span class="span--social__link">Live Site</span></a>
-        </button> -->
-          </div>
-        </div>
-      </div>
-      <!-- About Me -->
-      <div data-anchor="about" class="section about_me fp-auto-height-responsive">
-        <div class="div--container__about">
-          <h1>Who I Am</h1>
-          <img class="responsive-img" src="yinyang.png">
-          <div class="row">
-            <div class="col s12">
-              <ul>
-                <li>Philosophizing interlocutor.</li>
-                <li>Watercolor dabbler.</h3>
-                  <li>Movement culture evangelist.</li>
-                  <li>Shameless cat lover.</h3>
-                    <li>Dreamer, believer, mover.</li>
-                  </li>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12">
-              <h1>What I Do</h1>
-            </div>
-            <div class="col s12 m3 offset-m3">
-              <h1 id="h1--about__frontend">frontend</h1>
-              <ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>React JS</li>
-                <li>Templating Engine (EJS)</li>
-                <li>Django</li>
-              </ul>
-            </div>
-
-            <div class="col s12 m3">
-              <h1 id="h1--about__backend">backend</h1>
-              <ul>
-                <li>Node JS</li>
-                <li>Express</li>
-                <li>PostgreSql/ORM</li>
-                <li>MongoDB</li>
-                <li>Python</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Contact -->
-      <div data-anchor="get_in_touch" class="section contact fp-auto-height-responsive">
-        <h1>I'd love to hear from you!</h1>
-        <img class="img--contact__wave" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Twemoji2_1f44b-1f3fc.svg">
-        <h3>
-          <i class="fa fa-envelope i--contact__email" aria-hidden="true"></i>seancswan@gmail.com</h3>
-        <h3>
-          <a target="_blank" href="https://github.com/seanthaswan">
-            <i class="fa fa-github i--contact__social"></i>
-          </a>
-          <a target="_blank" href="https://linkedin.com/in/seancswanson">
-            <i class="fa fa-linkedin i--contact__social"></i>
-          </a>
-          <a href="sean_swanson_resume.pdf">
-            <i id="i--contact__resume" class="fa fa-file-o i--contact__social"></i>
-            <span id="span--contact__pdf">pdf</span>
-          </a>
-        </h3>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- Begin Footer -->
-  <footer class="page-footer">
-    <div class="container">
-      <a class="white-text text-lighten-4 a--footer__copyright" href="http://seancswanson.com/">© 2018 | Sean Swanson</a>
-      <a class="white-text text-lighten-4 brand-logo right" href="http://seancswanson.com/">
-        <img src='swansong.png'>
+  <header>
+    <nav class="nav">
+      <a class="nav-logo">
       </a>
+      <span class="nav-name" href="#">Sean Swanson</span>
+      <ul class="nav-list">
+        <a class="nav-link" href="#">
+          <li>Home</li>
+        </a>
+        <a class="nav-link" href="about.html">
+          <li>About</li>
+        </a>
+        <a class="nav-link" href="portfolio.html">
+          <li>Portfolio</li>
+        </a>
+        <a class="nav-link" href="connect.html">
+          <li>Connect</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="main-content-container">
+      <div class="main-home-textbox">
+        <p class="main--paragraph__first hidden">Hey there!</p>
+        <p class="main--paragraph__first hidden">My name is Sean.</p>
+        <p class="main--paragraph__first hidden">I'm a web developer & artist in Seattle, WA.
+          <br>
+          <span class="loader__dot">.</span>
+          <span class="loader__dot">.</span>
+          <span class="loader__dot">.</span>
+        </p>
+        <p class="main--paragraph__first click-for-more hidden">click for more</p>
+        <p class="main--paragraph__second hidden">As a life long student I've fostered a passion for building and designing things... especially web experiences!</p>
+        <p class="main--paragraph__second hidden">You can browse my projects, read more about my story or contact me using the buttons above.</p>
+        <p class="main--paragraph__second hidden">I appreciate you taking the time to explore my site... Have a great day!</p>
+
+      </div>
+      <img class="sean-waving" src="assets/sean-saying-hi.png">
+    </div>
+  </main>
+  <footer>
+    <p class="footer-copyright"> &copy Sean Swanson '18
+      <a class="resume-link" href="assets/sean_swanson_resume_jul18.pdf">♥ Resumé</a>
+    </p>
     </div>
   </footer>
-  <!-- End Footer -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
-  <script src="https://use.fontawesome.com/0b9ce0a65d.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="./js/script.js" type="text/javascript"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
