@@ -75,6 +75,7 @@
 
 .card-title {
     padding: 10px;
+    text-decoration: underline;
 }
 
 .card-tech-badge {
