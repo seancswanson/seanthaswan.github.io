@@ -20,7 +20,7 @@
     position: relative;
     display: block;
     float: left;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     animation: floating 1.8s infinite ease-in-out alternate;
     text-align: center;
