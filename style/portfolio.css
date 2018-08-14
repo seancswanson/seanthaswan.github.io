@@ -6,8 +6,11 @@
     }
     div.card {
         display: block;
-        width: 80%;
+        width: 60%;
         margin: 20px auto;
+    }
+    a.card-image-link {
+      background-size: fill;
     }
 }
 
@@ -47,7 +50,7 @@
     display: inline-block;
     width: 275px;
     height: auto;
-    margin-top: 20px;
+    margin: 10px 5px;
     vertical-align: top;
     border: 4px double rgba(255, 255, 255, .9);
     border-radius: 5px;
@@ -57,13 +60,25 @@
 .card-image-container {
     overflow: hidden;
     width: 100%;
+    height: 190px;
     border: 2px solid white;
+    border-radius: 2px;
 }
 
-.card-image {
+/* .card-image {
     width: 100%;
     background: white;
+} */
+
+.card-image-link {
+  height: 190px;
+  width: 100%;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
+
 
 .card-info {
     width: 100%;

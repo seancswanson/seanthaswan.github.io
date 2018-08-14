@@ -6,6 +6,10 @@
     
     $textBoxAbout: $(document).find('.main-about-textbox'),
     
+    $firstMainParagraph: $(document).find('.main--paragraph__first'),
+    
+    $secondMainParagraph: $(document).find('.main--paragraph__second'),
+    
     $portfolioContentArea: $(document).find('.main-content-container'),
     
     projects: [{
@@ -13,29 +17,29 @@
       '//seancswanson.com/chairman-of-the-board',
       '//mndfll-js.herokuapp.com/',
       '//use-hue.herokuapp.com',
-      '//github.com/seanthaswan/express-pokedex',
-      '//pigmentation-presumption.glitch.me/'
+      '//pigmentation-presumption.glitch.me/',
+      '//github.com/seanthaswan/express-pokedex'
     ],
       screenshots: [
         'assets/chairman-sm.png',
         'assets/mndfll-sm.png',
         'assets/hue-sm.png',
-        'assets/poke-sm.png',
-        'assets/mndfll-sm.png',
+        'assets/pigmentation-sm.png',
+        'assets/poke-sm.png'
       ],
       alt: [
         'Chairman of the Board',
         'Mndf.ll',
         'Hue',
-        'PokéDex',
         'Pigmentation Presumption',
+        'PokéDex'
       ],
       titles: [
         'Chairman of the Board',
         'Mndf.ll',
         'Hue',
         'Pigmentation Presumption',
-        'PokéDex',
+        'PokéDex'
       ],
       descriptions: [
         'A retro front-end corporate ladder simulator game. I reimagined a game that my father had programmed in BASIC in the 80\'s to bring it up to modern specs!',
@@ -65,49 +69,63 @@
       for (var i = 0; i <= projects.links.length - 1; i++) {
         var card = document.createElement('div');
         card.classList = 'card';
+        this.$portfolioContentArea.append(card);
         
         var cardImageContainer = document.createElement('div');
         cardImageContainer.classList = 'card-image-container';
+        card.append(cardImageContainer);
         
         var cardImageLink = document.createElement('a');
+        cardImageLink.classList = 'card-image-link';
         cardImageLink.setAttribute('href', projects.links[i]);
+        cardImageLink.style.backgroundImage = "url('" + projects.screenshots[i] + "')";
+        cardImageContainer.append(cardImageLink);
         
-        var cardImage = document.createElement('img');
-        cardImage.classList = 'card';
-        cardImage.setAttribute('src', projects.screenShots[i]);
-        cardImage.setAttribute('alt', projects.alt[i]);
+        // var cardImage = document.createElement('img');
+        // cardImage.classList = 'card';
+        // cardImage.setAttribute('src', projects.screenshots[i]);
+        // cardImage.setAttribute('alt', projects.alt[i]);
+        // cardImageLink.append(cardImage);
         
         var cardInfo = document.createElement('div');
         cardInfo.classList = 'card-info';
+        card.append(cardInfo);
         
         var cardTitle = document.createElement('p');
         cardTitle.classList = 'card-title';
         cardTitle.textContent = projects.titles[i];
+        cardInfo.append(cardTitle);
         
         var cardDescription = document.createElement('p');
         cardDescription.classList = 'card-description';
+        cardDescription.textContent = projects.descriptions[i];
+        cardInfo.append(cardDescription);
         
         var cardTech = document.createElement('p');
         cardTech.classList = 'card-tech';
+        cardInfo.append(cardTech);
         
-        var cardTechBadge = document.createElement('span');
-        cardTechBadge.classList = 'card-tech-badge';
-        
-        $portfolioContentArea
+        for (var j = 0; j <= projects.badges[i].length - 1; j++) {
+          var cardTechBadge = document.createElement('span');
+          cardTechBadge.classList = 'card-tech-badge';
+          cardTechBadge.textContent = projects.badges[i][j];
+          cardTech.append(cardTechBadge);
+        }
       }
     },
 
     textBoxController: function() {
-        $(document).find('.main--paragraph__first').toggleClass('hidden');
+      var self = this;
+        self.$firstMainParagraph.toggleClass('hidden');
 
       this.$textBox.on('click', function() {
-        $(document).find('.main--paragraph__first').toggleClass('hidden');
-        $(document).find('.main--paragraph__second').toggleClass('hidden');
+        self.$firstMainParagraph.toggleClass('hidden');
+        self.$secondMainParagraph.toggleClass('hidden');
       });
 
       this.$textBoxAbout.on('click', function() {
-        $(document).find('.main--paragraph__first').toggleClass('hidden');
-        $(document).find('.main--paragraph__second').toggleClass('hidden');
+        self.$firstMainParagraph.toggleClass('hidden');
+        self.$secondMainParagraph.toggleClass('hidden');
       });
     }
   }
