@@ -3,6 +3,7 @@
 @media screen and (max-width: 650px) {
     div.main-connect-textbox {
         float: none;
+
         width: 95%;
         margin: 20px auto;
     }
@@ -14,6 +15,7 @@
 
 .main-content-container {
     display: inline-block;
+
     width: 100%;
     height: auto;
     margin: 30px auto;
@@ -21,17 +23,21 @@
 }
 
 .main-connect-textbox {
-    font-size: 19px;
     display: block;
+
     width: 75%;
     margin: 0 auto;
     padding: 10px 15px;
+
     text-align: center;
+
     color: white;
     border: 3px double white;
     border-radius: .4em;
     background: #332c50;
     box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, .25);
+
+    font-size: 19px;
 }
 
 .lighter-text {
@@ -48,7 +54,9 @@
 
 .social-row-icon {
     width: 130px;
+
     transition: all .5s ease;
+
     border-radius: 100%;
 }
 
@@ -58,12 +66,15 @@
 
 .social-row-icon:hover {
     width: 135px;
+
     animation: floating 1.8s infinite ease-in-out alternate;
+
     box-shadow: 0 0 1px 1px rgba(255, 255, 255, .2);
 }
 
 .main-about__divider {
     width: 50%;
+
     border: 0;
     border-bottom: 1px dashed rgba(0, 0, 0, .4);
     background: white;

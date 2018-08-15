@@ -3,10 +3,12 @@
 @media screen and (max-width: 650px) {
     div.main-about-textbox {
         float: none;
+
         max-width: 90vw;
     }
     img.sean-metal {
         float: none;
+
         margin: 30px auto;
     }
 }
@@ -17,21 +19,26 @@
 }
 
 .main-about-textbox {
-    font-size: 19px;
     position: relative;
+
     float: right;
     overflow-y: scroll;
+
     max-width: 345px;
     max-height: 400px;
     margin: 0 auto;
     padding: 5px;
+
+    cursor: pointer;
     text-align: center;
+
     color: white;
     border: 3px double white;
     border-radius: .4em;
     background: #332c50;
     box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, .25);
-    cursor: pointer;
+
+    font-size: 19px;
 }
 
 .main-about-textbox p {
@@ -39,16 +46,19 @@
 }
 
 .main-about__link {
-    font-weight: bold;
     color: white;
+
+    font-weight: bold;
 }
 
 .click-for-more {
-    font-size: 14px;
-    font-style: italic;
     animation: 2s grow-shrink infinite;
     letter-spacing: 1px;
+
     color: gray;
+
+    font-size: 14px;
+    font-style: italic;
 }
 
 .sean-metal {
@@ -61,6 +71,7 @@
 
 .main-about__divider {
     width: 50%;
+
     border: 0;
     border-bottom: 1px dashed rgba(0, 0, 0, .4);
     background: white;
@@ -68,5 +79,6 @@
 
 .spinning-questionmark {
     display: inline-block;
+
     animation: spinning 4s linear infinite;
 }

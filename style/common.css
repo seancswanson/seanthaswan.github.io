@@ -35,6 +35,7 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
     background: url('../assets/scanlinebg.jpg');
 }
 
@@ -52,6 +53,7 @@ html {
     header {
         width: 94vw !important;
         margin: 30px auto -15px !important;
+
         transition: all .1s ease;
     }
     .nav {
@@ -62,10 +64,12 @@ html {
     }
     a.nav-link {
         display: block;
+
         width: 80%;
         margin: 0 auto;
         margin-bottom: 10px;
         padding: 10px;
+
         text-align: center;
     }
 }
@@ -78,6 +82,7 @@ html {
     }
     .main {
         width: 96vw;
+
         transition: all .1s ease;
         transform: scale(.95);
     }
@@ -86,6 +91,7 @@ html {
     }
     div.footer-container {
         width: 300px;
+
         text-align: center;
     }
 }
@@ -96,24 +102,29 @@ html {
     font-family: system;
     font-weight: 300;
     font-style: normal;
+
     src: local('.SFNSText-Light'), local('.HelveticaNeueDeskInterface-Light'), local('.LucidaGrandeUI'), local('Ubuntu Light'), local('Segoe UI Light'), local('Roboto-Light'), local('DroidSans'), local('Tahoma');
 }
 
 @font-face {
     font-family: pixel;
+
     src: url('../assets/Nouveau_IBM.ttf');
 }
 
 body {
-    font-family: pixel, system;
     min-height: 100%;
     margin: 0;
+
+    font-family: pixel, system;
 }
 
 header {
     width: 620px;
     margin: 60px auto 5px auto;
+
     text-align: center;
+
     border: 1px solid transparent;
     border-top: none;
     border-bottom: 1px solid #46878f;
@@ -124,51 +135,63 @@ header {
 .nav {
     width: 100%;
     padding: 10px;
+
+    border: 4px double white;
     border-radius: 5px;
     background: #46878f;
-    border: 4px double white;
 }
 
 .nav-list {
     display: inline-block;
+
     margin-top: 25px;
     padding: 0;
+
     list-style: none;
 }
 
 .nav-logo {
     position: relative;
     top: 16px;
+
     margin-right: 10px;
 }
 
 .nav-name {
     display: inline-block;
-    color: white;
-    padding-top: 20px;
+
     margin-right: 20px;
-    font-size: 40px;
-    letter-spacing: 1.4px;
+    padding-top: 20px;
+
     transition: all .5s ease;
+    letter-spacing: 1.4px;
+
+    color: white;
+
+    font-size: 40px;
 }
 
 .nav-link {
-    font-size: 18px;
-    letter-spacing: 1px;
     display: inline-block;
+
     margin: 0 5px;
     padding: 5px 10px;
+
     -webkit-transition: .05s all linear;
     -moz-transition: .05s all linear;
     -o-transition: .05s all linear;
     transition: .05s all linear;
     text-decoration: none;
+    letter-spacing: 1px;
+
     color: black;
     border: 1px solid black;
     border-radius: 5px;
     background: white;
     -webkit-box-shadow: 4px 4px 0 #222;
     box-shadow: 4px 4px 0 #222;
+
+    font-size: 18px;
 }
 
 .nav-link:hover {
@@ -196,7 +219,9 @@ header {
 .main {
     max-width: 600px;
     margin: 10px auto;
+
     text-align: center;
+
     border: 1px solid transparent;
     border-top: none;
     border-bottom: 1px solid #46878f;
@@ -207,6 +232,7 @@ header {
 
 .main-content-container {
     display: inline-block;
+
     width: auto;
     height: auto;
     margin: 30px auto;
@@ -220,6 +246,7 @@ header {
 .footer-container {
     width: 600px;
     margin: 0 auto;
+
     text-align: right;
 }
 
@@ -228,9 +255,11 @@ header {
 }
 
 a.resume-link {
-    font-size: 20px;
-    font-weight: bold;
     animation: glow 2s infinite;
     text-decoration: none;
+
     color: black;
+
+    font-size: 20px;
+    font-weight: bold;
 }
