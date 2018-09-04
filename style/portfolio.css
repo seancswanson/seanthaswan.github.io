@@ -7,11 +7,11 @@
     div.card {
         display: block;
 
-        width: 60%;
+        width: 80%;
         margin: 20px auto;
     }
     a.card-image-link {
-      background-size: fill;
+      background-size: cover;
     }
 }
 
@@ -85,7 +85,7 @@
   height: 190px;
 
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   background-size: cover;
 }
 
