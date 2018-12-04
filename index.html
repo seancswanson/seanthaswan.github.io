@@ -1,71 +1,481 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <title>Sean Swanson | Web Developer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+  </head>
 
-<head>
-  <title>Sean Swanson | Web Developer</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="style/common.css">
-  <link rel="stylesheet" href="style/home.css">
-</head>
+  <body>
+  	<div class="grid">
+      <section class="sidebar">
+        <div class="sidebar-top">
+        </div>
+        <ul class="nav">
+          <li class="nav-item clickable selected" data-id="home">Home</li>
+          <li class="nav-item clickable" data-id="about">About</li>
+          <li class="nav-item clickable" data-id="project">Projects</li>
+          <li class="nav-item clickable" data-id="cv">CV</li>
+          <li class="nav-item clickable" data-id="connect">Connect</li>
+        </ul>
+        <div class="sidebar-social">
+          <a class="sidebar-social-item linkedin" href="https://www.linkedin.com/in/seancswanson/">
+          </a>
+          <a class="sidebar-social-item github" href="https://github.com/seanthaswan">
+          </a>
+          <a class="sidebar-social-item medium" href="http://medium.com/@seancswan/">
+          </a>
+        <div>
+      </section>
 
-<body>
-  <header>
-    <nav class="nav">
-      <a class="nav-logo">
-      </a>
-      <span class="nav-name" href="#">Sean Swanson</span>
-      <ul class="nav-list">
-        <a class="nav-link" href="#">
-          <li>Home</li>
-        </a>
-        <a class="nav-link" href="about.html">
-          <li>About</li>
-        </a>
-        <a class="nav-link" href="portfolio.html">
-          <li>Portfolio</li>
-        </a>
-        <a class="nav-link" href="connect.html">
-          <li>Connect</li>
-        </a>
-      </ul>
-    </nav>
-  </header>
+      <main>
 
-  <main class="main">
-    <div class="main-content-container">
-      <div class="main-home-textbox">
-        <p class="main--paragraph__first hidden">Hey there!</p>
-        <p class="main--paragraph__first hidden">My name is Sean.</p>
-        <p class="main--paragraph__first hidden">I'm a web developer & artist in Seattle, WA.
-          <br>
-          <span class="loader__dot">.</span>
-          <span class="loader__dot">.</span>
-          <span class="loader__dot">.</span>
-        </p>
-        <p class="main--paragraph__first click-for-more hidden">click for more</p>
-        <p class="main--paragraph__second hidden">As a life long student I've fostered a passion for building and designing things... especially web experiences!</p>
-        <p class="main--paragraph__second hidden">You can browse my projects, read more about my story or contact me using the buttons above.</p>
-        <p class="main--paragraph__second hidden">I appreciate you taking the time to explore my site... Have a great day!</p>
+        <header class="page-title">
+            <div class="page-title--left">
+              sean swanson
+            </div>
+            <div class="hamburger-bun">
+              <div class="hamburger-patty clickable"></div>
+            </div>
+            <div class="swansong-logo-container">
+              <div class="swansong-logo"></div>
+            </div>
+            <div class="page-title--right">
+              web developer
+            </div>
+        </header>
 
-      </div>
-      <img class="sean-waving" src="assets/sean-saying-hi.png">
-    </div>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <p class="footer-copyright"> &copy Sean Swanson '18
-        <a class="resume-link" href="assets/sean_swanson_resume_jul18.pdf">♥ Resumé</a>
-      </p>
-    </div>
-  </footer>
+        <ul class="nav-mobile clickable">
+          <li class="nav-mobile-item selected" data-id="home">Home</li>
+          <li class="nav-mobile-item" data-id="about">About</li>
+          <li class="nav-mobile-item" data-id="project">Projects</li>
+          <li class="nav-mobile-item" data-id="cv">CV</li>
+          <li class="nav-mobile-item" data-id="connect">Connect</li>
+        </ul>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-    crossorigin="anonymous"></script>
-  <script src="js/script.js" defer></script>
-</body>
+        <section class="page-main">
+          <!-- Home -->
+          <section class="page-main--home" id="home">
+            <div class="main-heading">
+              <h1 id="home-heading">oh, hello there!</h1>
+            </div>
+            <hr>
+            <div class="main-content white-bg">
+              <p>my name is sean swanson, and i'm a web developer based in seattle!</p>
+              <p>i'm a curious philomath, fostering a passion for building and designing things... especially web experiences!</p>
+              <p>
+                as of spring two-thousand-and-eighteen i am working as an apprentice web developer under
+                <a href="http://iangilman.com/">ian gilman</a>.
+              </p>
+              <p>from here you can browse my <span class="section-btn pink-text" data-id="project">projects</span>, read more about <span class="section-btn pink-text" data-id="about">my story</span>, view my <span class="section-btn pink-text" data-id="cv">cv</span>, or <span class="section-btn pink-text" data-id="connect">contact me</span>.</p>
+            </div>
+          </section>
+
+          <!-- About -->
+          <section class="page-main--about" id="about">
+            <div class="main-heading">
+              <h1 id="about-heading">about</h1>
+            </div>
+            <hr>
+            <div class="main-content about-content-grid">
+              <img id="about-portrait" src="assets/swanson-portrait-sm-trans.png" alt="Sean Swanson's Portrait">
+              <div class="abstract-bio white-bg">
+                <p><b>the abstract:</b> basically i'm a pretty cool human who loves to breakdance, paint watercolor landscapes, go on long walks, read eastern philosophy(or anything fantasy/sci-fi), and it so happens that i'm also a web developer!</p>
+                <p>if you'd like the full story, <span class="expando-button pink-text clickable">click here!</span></p>
+              </div>
+              <div class="expando-bio white-bg hidden">
+                <p>
+                  i grew up in the beautiful pacific northwest where the rain falls aplenty and single-origin cold brew is the preferred stimulant.
+                </p>
+                <p>
+                  my most recent adventure was a 3-month immersive (and intensive) web development bootcamp through general assembly. overall
+                  the curriculum included 400+ hours of class work, labs, projects and even a couple hackathons! not only did i learn
+                  about javascript, react, web development best practices, and restful architecture- i also learned about the value
+                  of collaboration, team work, how necessary a skill time management really is... i came out of the experience with
+                  a whole new toolbelt with which to tackle my goals.
+                </p>
+                <p>
+                  my academic career was spent at the university of washington in seattle where i studied philosophy and read the classic curriculum
+                  of the greek greats, found a fondness for hume, had my foundations stripped by descartes and discovered a curiosity
+                  for the sublime in schopenhauer.
+                </p>
+                <p>
+                  i sought answers to the questions about the nature of reality and personal purpose and came out with just more questions-
+                  big success!
+                </p>
+                <p>
+                  throughout university and thereafter i continued to work as a professional fashion model and have travelled around the u.s.
+                  strutting down catwalks and shooting for online catalogues.
+                </p>
+                <p>
+                  currently i'm represented by tcm models in seattle, state mgmt in los angeles, and major models in milano, italy.
+                </p>
+                <p>
+                  i've been around tech my whole life with a father who worked for nintendo, taito, & microsoft and a brother who studied 3d
+                  animation and went on to become a qa lead at big fish games.
+                </p>
+                <p>
+                  my mother, being on the other side as a creative/maker, inspired my involvement in practicing art. these influences together
+                  have given me lenses that helped me fully appreciate the wonder and potential computers could offer.
+                </p>
+                <p>
+                  i consider myself a human of renaissance ideals and as such my telos is geared towards fostering personal development and
+                  becoming a productive citizen of earth. i am especially interested in contributing to projects involving education
+                  technology, environmental sustainability, and art!
+                </p>
+                <p><b>the tl;dr:</b> basically i'm a pretty cool human who loves to breakdance, paint watercolor landscapes, go on long walks, read eastern philosophy(or anything fantasy/sci-fi), and it so happens that i'm also a web developer!</p>
+              </div>
+            </div>
+          </section>
+
+            <!-- Portfolio -->
+          <section class="page-main--portfolio" id="project">
+            <div class="main-heading">
+              <h1 id="projects-heading">projects</h1>
+            </div>
+            <hr>
+            <div class="main-content">
+              <!-- chairman -->
+              <div class="project-item white-bg">
+                <div class="project-left">
+                  <div class="project-title">
+                    chairman of the board
+                  </div>
+                  <div class="project-screenshot chairman">
+                  </div>
+                </div>
+                <div class="project-right">
+                  <div class="project-description">
+                    a retro front-end corporate ladder simulator game. i reimagined a game that my father had programmed in basic in the 80's to bring it up to modern specs!
+                  </div>
+                  <ul class="project-list project-tech">
+                    <li class="project-tech-item">game</li>
+                    <li class="project-tech-item">javascript</li>
+                    <li class="project-tech-item">jquery</li>
+                    <li class="project-tech-item">html</li>
+                    <li class="project-tech-item">css</li>
+                  </ul>
+                  <ul class="project-list project-demo">
+                    <a href="//seancswanson.com/chairman-of-the-board" class="project-demo-item clickable"><li>live</li></a>
+                    <a href="https://github.com/seanthaswan/chairman-of-the-board" class="project-demo-item clickable"><li>github</li></a>
+                  </ul>
+                </div>
+              </div>
+              <hr class="project-divider">
+
+              <!-- mndfll -->
+              <div class="project-item white-bg">
+                <div class="project-left">
+                  <div class="project-title">
+                    mndf.ll
+                  </div>
+                  <div class="project-screenshot mndfll">
+                  </div>
+                </div>
+                <div class="project-right">
+                  <div class="project-description">
+                    a full-stack daily journaling & goal tracking app featuring user auth and database utilization.
+                  </div>
+                  <ul class="project-tech">
+                    <li class="project-tech-item">javascript</li>
+                    <li class="project-tech-item">node.js</li>
+                    <li class="project-tech-item">express.js</li>
+                    <li class="project-tech-item">html</li>
+                    <li class="project-tech-item">css</li>
+                  </ul>
+                  <ul class="project-list project-demo">
+                    <a href="//mndfll-js.herokuapp.com/" class="project-demo-item clickable"><li>live</li></a>
+                    <a href="https://github.com/seanthaswan/mndfll" class="project-demo-item clickable"><li>github</li></a>
+                  </ul>
+                </div>
+              </div>
+              <hr class="project-divider">
+
+              <!-- hue -->
+              <div class="project-item white-bg">
+                <div class="project-left">
+                  <div class="project-title">
+                    spatium laboratorium
+                  </div>
+                  <div class="project-screenshot spatium">
+                  </div>
+                </div>
+                <div class="project-right">
+                  <div class="project-description">
+                    experiments in space & time... my interactive laboratory exploring 3d javascript and webgl concepts abstracted by three.js.
+                  </div>
+                  <ul class="project-tech">
+                    <li class="project-tech-item">javascript</li>
+                    <li class="project-tech-item">three.js</li>
+                    <li class="project-tech-item">animation</li>
+                    <li class="project-tech-item">html</li>
+                    <li class="project-tech-item">css</li>
+                  </ul>
+                  <ul class="project-list project-demo">
+                    <a href="https://spatium-laboratorium.glitch.me" class="project-demo-item clickable"><li>live</li></a>
+                    <a href="https://github.com/seanthaswan/spatium-laboratorium" class="project-demo-item clickable"><li>github</li></a>
+                  </ul>
+                </div>
+              </div>
+              <hr class="project-divider">
+
+              <!-- hue -->
+              <div class="project-item white-bg">
+                <div class="project-left">
+                  <div class="project-title">
+                    hue
+                  </div>
+                  <div class="project-screenshot hue">
+                  </div>
+                </div>
+                <div class="project-right">
+                  <div class="project-description">
+                    a mern-stack color detection utility for designers featuring cloud uploading & asynchronous operations.
+                  </div>
+                  <ul class="project-tech">
+                    <li class="project-tech-item">javascript</li>
+                    <li class="project-tech-item">react.js</li>
+                    <li class="project-tech-item">node.js</li>
+                    <li class="project-tech-item">express.js</li>
+                    <li class="project-tech-item">mongodb</li>
+                    <li class="project-tech-item">html</li>
+                    <li class="project-tech-item">css</li>
+                  </ul>
+                  <ul class="project-list project-demo">
+                    <a href="//use-hue.herokuapp.com" class="project-demo-item clickable"><li>live</li></a>
+                    <a href="https://github.com/seanthaswan/hue-project3" class="project-demo-item clickable"><li>github</li></a>
+                  </ul>
+                </div>
+              </div>
+              <hr class="project-divider">
+
+              <!-- chroma -->
+              <div class="project-item white-bg">
+                <div class="project-left">
+                  <div class="project-title">
+                    chroma chameleon
+                  </div>
+                  <div class="project-screenshot chroma">
+                  </div>
+                </div>
+                <div class="project-right">
+                  <div class="project-description">
+                    a front-end painting app resembling the nostalgic simplicity of mspaint... soon to add full shape, importing, selection functionalities.
+                  </div>
+                  <ul class="project-tech">
+                    <li class="project-tech-item">javascript</li>
+                    <li class="project-tech-item">html</li>
+                    <li class="project-tech-item">canvas</li>
+                    <li class="project-tech-item">css</li>
+                  </ul>
+                  <ul class="project-list project-demo">
+                    <a href="//chroma-chameleon.glitch.me/" class="project-demo-item clickable"><li>live</li></a>
+                    <a href="https://github.com/seanthaswan/chroma-chameleon" class="project-demo-item clickable"><li>github</li></a>
+                  </ul>
+                </div>
+              </div>
+              <hr class="project-divider">
+
+              <!-- pigment -->
+              <div class="project-item white-bg">
+                <div class="project-left">
+                  <div class="project-title">
+                    pigmentation presumption
+                  </div>
+                  <div class="project-screenshot pigmentation">
+                  </div>
+                </div>
+                <div class="project-right">
+                  <div class="project-description">
+                    a front-end color guessing game to help sharpen your eye for color! soon to add hex code challenge for the elites.
+                  </div>
+                  <ul class="project-tech">
+                    <li class="project-tech-item">game</li>
+                    <li class="project-tech-item">javascript</li>
+                    <li class="project-tech-item">html</li>
+                    <li class="project-tech-item">css</li>
+                  </ul>
+                  <ul class="project-list project-demo">
+                    <a href="//pigmentation-presumption.glitch.me/" class="project-demo-item clickable"><li>live</li></a>
+                    <a href="https://github.com/seanthaswan/pigmentation-presumption" class="project-demo-item clickable"><li>github</li></a>
+                  </ul>
+                </div>
+              </div>
+              <hr class="project-divider">
+
+              <!-- poke -->
+              <div class="project-item white-bg">
+                <div class="project-left">
+                  <div class="project-title">
+                    pokédex
+                  </div>
+                  <div class="project-screenshot poke">
+                  </div>
+                </div>
+                <div class="project-right">
+                  <div class="project-description">
+                    a pen-stack pokèmon encyclopedia as a study of restful api architecture and artistic design.
+                  </div>
+                  <ul class="project-tech">
+                    <li class="project-tech-item">javascript</li>
+                    <li class="project-tech-item">node.js</li>
+                    <li class="project-tech-item">express.js</li>
+                    <li class="project-tech-item">PostgreSQL</li>
+                    <li class="project-tech-item">html</li>
+                    <li class="project-tech-item">css</li>
+                  </ul>
+                  <ul class="project-list project-demo">
+                    <a href="https://github.com/seanthaswan/express-pokedex" class="project-demo-item clickable"><li>github</li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Resume -->
+          <section class="page-main--resume" id="resume">
+            <div class="main-heading">
+              <h1 id="cv-heading">cv</h1>
+            </div>
+            <hr>
+            <div class="main-content">
+              <p>listed below is my most recent work and academic experience.</p>
+              <p>for my full resumé, <a class="pink-text clickable" href="assets/sean_swanson_resume_jul18.pdf">click here</a>.</p>
+              <div class="cv-item white-bg">
+                <div class="cv-top">
+                  <div class="cv-company">traditions of the ancestors</div>
+                  <div class="cv-position">junior web developer </div>
+                  <div class="cv-date">august 2018 - present</div>
+                </div>
+                <div class="cv-bottom">
+                  <div class="cv-about">a platform for exploring and connecting with the world's cultures. currently in alpha.
+                    the tech stack includes:
+                    <ul>
+                      <li>javascript</li>
+                      <li>node.js/express</li>
+                      <li>jquery</li>
+                      <li>underscore</li>
+                      <li>mysql</li>
+                    </ul></div>
+                </div>
+              </div>
+              <div class="cv-item white-bg">
+                <div class="cv-top">
+                  <div class="cv-company">ian gilman</div>
+                  <div class="cv-position">apprentice web developer</div>
+                  <div class="cv-date">may 2018 - present</div>
+                </div>
+                <div class="cv-bottom">
+                  <div class="cv-about">
+                    <p>apprenticeship under a senior web developer. my day-to-day tasks involved typing out and collaborating on dictated code which reinforced the learning of coding best practices and other related programming skills. it has shown to be an amazing opportunity to learn how to work effectively as a remote developer on a team and all that goes into building a project from scratch to production ready apps and experiences.</p>
+                  <div class="cv-technologies">
+                    <div class="cv-technologies-left">
+                    <p> as a pair programmer, i was working mostly with front end frameworks and languages but also was involved in some back end programming using. we use many technologies including but not limited to:</p>
+                      <ul>
+                        <li>javascript</li>
+                        <li>es6</li>
+                        <li>react.js</li>
+                        <li>node.js</li>
+                        <li>express.js</li>
+                        <li>three.js</li>
+                        <li>pixi.js</li>
+                        <li>hammer.js</li>
+                        <li>webgl</li>
+                        <li>aframe.js</li>
+                        <li>webvr</li>
+                        <li>lodash</li>
+                        <li>underscore</li>
+                        <li>templating</li>
+                        <li>html</li>
+                        <li>css</li>
+                      </ul>
+                    </div>
+                    <div class="cv-technologies-right">
+                      <p>we also used various other telecom, version control and project management technologies such as:</p>
+                      <ul>
+                        <li>git</li>
+                        <li>svn</li>
+                        <li>github</li>
+                        <li>bitbucket</li>
+                        <li>asana</li>
+                        <li>jira</li>
+                        <li>slack</li>
+                      </ul>
+                    </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="cv-item white-bg">
+                <div class="cv-top">
+                  <div class="cv-company">general assembly</div>
+                  <div class="cv-position">web development immersive graduate</div>
+                  <div class="cv-date">november 2017 - february 2017</div>
+                </div>
+                <div class="cv-bottom">
+                  <div class="cv-about">a 12-week web development immersive program, totaling ~480 hours of classroom instruction and 70+ hours of lab work each week in a collaborative environment.
+                    i built several full-stack applications in agile sprints using technologies such as:
+                    <ul>
+                      <li>javascript</li>
+                      <li>react.js</li>
+                      <li>node.js/express</li>
+                      <li>user authentication</li>
+                      <li>view templating engines (ejs)</li>
+                      <li>jquery</li>
+                      <li>orm, psql</li>
+                      <li>ajax/external apis</li>
+                      <li>learned html5 with semantic markup</li>
+                      <li>css3 to develop animated and responsive web pages</li>
+                      <li>bootstrap, materialize, & other css frameworks</li>
+                    </ul>
+                    throughout the course, i also mentored several students intermittently during study sessions outside of class and participated in whiteboarding with my cohort. </div>
+                </div>
+              </div>
+              <div class="cv-item white-bg">
+                <div class="cv-top">
+                  <div class="cv-company">university of washington</div>
+                  <div class="cv-position">b.a. philosophy</div>
+                  <div class="cv-date">january 2014 - august 2015</div>
+                </div>
+                <div class="cv-bottom">
+                  <div class="cv-about">studied philosophy with a concentration in the history of western philosophy including metaphysics, ethics, aesthetics, epistemology, and the development of these philosophical concepts and issues from ancient to contemporary times. <em>go huskies!</em></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Connect -->
+          <section class="page-main--connect" id="connect">
+            <div class="main-heading">
+              <h1 id="connect-heading">connect</h1>
+            </div>
+            <hr>
+            <div class="main-content">
+              <p>care to drop a line?</p>
+              <p>for employment inquiries, questions, or philosophical conversation: </p>
+              <p>email me @
+                <a class="pink-text" href="mailto:&#115;&#101;&#097;&#110;&#099;&#115;&#119;&#097;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#115;&#101;&#097;&#110;&#099;&#115;&#119;&#097;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+              </p>
+              <p>
+              check out my full resumé
+              <a class="pink-text" href="assets/sean_swanson_resume_jul18.pdf">here</a>!
+              </p>
+            </div>
+          </section>
+        </section>
+      </main>
+  	</div>
+
+    <script src="js/lib/jquery-3.3.1.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </body>
 
 </html>
