@@ -4,8 +4,8 @@ html {
 }
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -34,7 +34,10 @@ body {
 }
 
 .no-select {
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .green-text {
@@ -43,6 +46,7 @@ body {
 
 .pink-text {
     cursor: pointer;
+    -webkit-transition: .2s all ease;
     transition: .2s all ease;
 
     color: rgb(var(--pink));
@@ -94,9 +98,12 @@ a {
 /*********************/
 
 .grid {
+    display: -ms-grid;
     display: grid;
 
-    grid-template-columns: 250px auto;
+    -ms-grid-columns: 250px auto;
+
+        grid-template-columns: 250px auto;
 }
 
 /*********************/
@@ -106,6 +113,8 @@ a {
 .sidebar {
     font-size: 16px;
     font-weight: 600;
+
+    display: -ms-grid;
 
     display: grid;
 
@@ -118,7 +127,9 @@ a {
 
     border-right: 1px solid rgba(var(--off-white), .7);
 
-    grid-template-rows: 50px 1fr;
+    -ms-grid-rows: 50px 1fr;
+
+        grid-template-rows: 50px 1fr;
 }
 
 .sidebar-top {
@@ -140,7 +151,10 @@ a {
     padding: 20px 0;
     padding-left: 30px;
 
+    -webkit-transition: .2s all ease;
+
     transition: .2s all ease;
+    -webkit-transition: .7s border ease-in-out;
     transition: .7s border ease-in-out;
     letter-spacing: 1.5px;
 
@@ -168,6 +182,7 @@ a {
 }
 
 .selected {
+    -webkit-transition: .2s all ease;
     transition: .2s all ease;
 
     color: rgb(var(--pink));
@@ -175,12 +190,17 @@ a {
 }
 
 .sidebar-social {
+    display: -ms-grid;
     display: grid;
 
     padding: 10px 10px 20px 10px;
 
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
+    -ms-grid-columns: auto auto auto;
+
+        grid-template-columns: auto auto auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .sidebar-social-item {
@@ -189,6 +209,8 @@ a {
     width: 40px;
     height: 40px;
     padding: 1px;
+
+    -webkit-transition: .4s all ease;
 
     transition: .4s all ease;
 
@@ -203,7 +225,9 @@ a {
 .sidebar-social-item.linkedin {
     background-image: url(../assets/icons/linkedin.svg);
 
-    align-self: center;
+    -ms-flex-item-align: center;
+
+        align-self: center;
 }
 
 .sidebar-social-item.github {
@@ -215,10 +239,13 @@ a {
 }
 
 main {
+    display: -ms-grid;
     display: grid;
     overflow: hidden;
 
-    grid-template-rows: 50px 100vh;
+    -ms-grid-rows: 50px 100vh;
+
+        grid-template-rows: 50px 100vh;
 }
 
 /*********************/
@@ -231,18 +258,27 @@ main {
     font-weight: 600;
     font-variant: small-caps;
 
+    display: -ms-grid;
+
     display: grid;
 
     text-align: center;
 
     border-bottom: 1px solid rgba(var(--off-white), .7);
 
-    justify-content: center;
-    grid-template-columns: 1fr 60px 1fr;
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -ms-grid-columns: 1fr 60px 1fr;
+        grid-template-columns: 1fr 60px 1fr;
 }
 
 .page-title--left {
     padding: 6px 1px;
+
+    -webkit-transition: .2s all ease;
 
     transition: .2s all ease;
     letter-spacing: 2px;
@@ -251,29 +287,35 @@ main {
 .page-title--right {
     padding: 6px 1px;
 
+    -webkit-transition: .2s all ease;
+
     transition: .2s all ease;
     letter-spacing: 2px;
 }
 
 .swansong-logo-container {
+    display: -ms-grid;
     display: grid;
 
-    border-right: 1px dotted rgba(255, 255, 255, .7);
-    border-left: 1px dotted rgba(255, 255, 255, .7);
+    -webkit-box-pack: center;
 
-    justify-content: center;
+        -ms-flex-pack: center;
+
+            justify-content: center;
 }
 
 .swansong-logo {
     display: block;
 
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
     background-image: url(../assets/swansong-no-text-thick.svg);
-    background-size: 40px 40px;
+    background-size: 30px 30px;
 
-    align-self: center;
+    -ms-flex-item-align: center;
+
+        align-self: center;
 }
 
 .hamburger-bun {
@@ -334,6 +376,7 @@ main {
 }
 
 #home-heading {
+    -webkit-transition: .2s all ease;
     transition: .2s all ease;
 }
 
@@ -345,10 +388,14 @@ main {
 
 
 .about-content-grid {
+    display: -ms-grid;
     display: grid;
 
-    grid-template-columns: 300px 1fr;
-    align-items: center;
+    -ms-grid-columns: 300px 1fr;
+
+        grid-template-columns: 300px 1fr;
+    -ms-grid-row-align: center;
+        align-items: center;
 }
 
 #about-portrait {
@@ -380,32 +427,44 @@ main {
 }
 
 .project-item {
+    display: -ms-grid;
     display: grid;
 
     margin-top: 50px;
     padding: 0 15px 0 5px;
     padding: 10px;
 
-    grid-template-columns: 1fr 2fr;
+    -ms-grid-columns: 1fr 2fr;
+
+        grid-template-columns: 1fr 2fr;
     grid-column-gap: 40px;
 }
 
 .project-left {
     font-size: 1.1em;
 
+    display: -ms-grid;
+
     display: grid;
 
     text-align: center;
 
-    grid-template-columns: 320px;
+    -ms-grid-columns: 320px;
+
+        grid-template-columns: 320px;
     grid-auto-rows: 50px 230px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .project-right {
+    display: -ms-grid;
     display: grid;
 
-    grid-template-rows: 50px 1fr;
+    -ms-grid-rows: 50px 1fr;
+
+        grid-template-rows: 50px 1fr;
     grid-template-areas: '.'
     'desc'
     'tech'
@@ -448,6 +507,8 @@ main {
     margin: 7px 4px;
     padding: 3px 7px;
 
+    -webkit-transition: .05s all linear;
+
     transition: .05s all linear;
     letter-spacing: 1px;
 
@@ -464,6 +525,8 @@ main {
     width: 100px;
     margin: 4px;
     padding: 5px 10px;
+
+    -webkit-transition: .3s all ease;
 
     transition: .3s all ease;
     text-align: center;
@@ -493,6 +556,8 @@ main {
     margin: 50px auto 0 auto;
 
     opacity: .4;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
 }
 
 
@@ -533,6 +598,8 @@ main {
 .cv-item {
     font-size: .9em;
 
+    display: -ms-grid;
+
     display: grid;
 
     margin: 30px 0 40px 0;
@@ -546,24 +613,32 @@ main {
 }
 
 .cv-top {
+    display: -ms-grid;
     display: grid;
 
     padding: 10px 0;
 
     border-bottom: 1px dashed rgba(var(--off-white), .2);
 
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
+    -ms-grid-columns: auto auto auto;
+
+        grid-template-columns: auto auto auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .cv-technologies {
+    display: -ms-grid;
     display: grid;
 
     margin-top: 15px;
 
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    grid-column-gap: 10px;
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
 }
 
 .cv-technologies p {
@@ -576,8 +651,11 @@ main {
     font-size: .85em;
 }
 
-.cv-technologies-left {
-    border-right: 1px dashed rgba(var(--mud-black), .3);
+.cv-tech-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
 }
 
 
@@ -599,11 +677,13 @@ main {
 
 @media (max-width: 700px) {
     main {
-        grid-template-rows: 50px 100vh;
+        -ms-grid-rows: 50px 100vh;
+            grid-template-rows: 50px 100vh;
     }
 
     .grid {
-        grid-template-columns: auto;
+        -ms-grid-columns: auto;
+            grid-template-columns: auto;
     }
 
     .sidebar {
@@ -620,12 +700,17 @@ main {
     }
 
     .hamburger-bun {
+        display: -ms-grid;
         display: grid;
 
         border-right: 1px dotted rgba(255, 255, 255, .7);
         border-left: 1px dotted rgba(255, 255, 255, .7);
 
-        justify-content: center;
+        -webkit-box-pack: center;
+
+            -ms-flex-pack: center;
+
+                justify-content: center;
     }
 
     .hamburger-patty {
@@ -637,12 +722,16 @@ main {
         background-image: url(../assets/icons/menu.svg);
         background-size: 20px 20px;
 
-        align-self: center;
+        -ms-flex-item-align: center;
+
+            align-self: center;
     }
 
     .nav-mobile {
         position: absolute;
         top: 50px;
+
+        display: -ms-grid;
 
         display: grid;
 
@@ -653,15 +742,23 @@ main {
 
         list-style: none;
 
+        -webkit-transition: .2s opacity ease-in-out;
+
         transition: .2s opacity ease-in-out;
 
         opacity: 0;
+
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         border-bottom: 1px solid rgba(var(--off-white), .6);
         background-color: rgb(var(--mud-black));
 
-        grid-template-columns: 45px 1fr auto 1fr 45px;
-        justify-items: center;
-        align-items: center;
+        -ms-grid-columns: 45px 1fr auto 1fr 45px;
+
+            grid-template-columns: 45px 1fr auto 1fr 45px;
+        -ms-grid-column-align: center;
+            justify-items: center;
+        -ms-grid-row-align: center;
+            align-items: center;
     }
 
     .page-main {
@@ -671,9 +768,13 @@ main {
     .page-title {
         font-size: 22px;
 
+        display: -ms-grid;
+
         display: grid;
 
-        grid-template-columns: 1fr 40px 1fr;
+        -ms-grid-columns: 1fr 40px 1fr;
+
+            grid-template-columns: 1fr 40px 1fr;
     }
 
     .page-title--left {
@@ -693,20 +794,38 @@ main {
     .project-item {
         text-align: center;
 
-        grid-template-columns: 1fr;
+        -ms-grid-columns: 80%;
+
+            grid-template-columns: 80%;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .project-left {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .cv-top {
+        display: -ms-grid;
         display: grid;
 
         padding: 10px 0;
 
         border-bottom: 1px dashed rgba(var(--off-white), .2);
 
-        grid-template-columns: auto;
+        -ms-grid-columns: auto;
+
+            grid-template-columns: auto;
     }
+}
+
+@media (max-width: 425px) {
+  .project-left {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 50px 200px;
+        grid-template-rows: 50px 200px;
+  }
 }

@@ -24,6 +24,7 @@
       'Bonjour!',
       'Guten Tag!',
       'Geia!',
+      'Kumusta!',
       'Shalóm!',
       'Namasté!',
       'Szia!',
@@ -35,7 +36,7 @@
       'Annyeonghaseyo!',
       'Sabai dii!',
       'Ave!',
-      'Es mīlu tevi!',
+      'Es milu tevi!',
       'Selamat petang!',
       'sain baina uu!',
       'Namaste!',
@@ -183,7 +184,6 @@
 
     //----------
     getSectionPos: function(el) {
-      console.log($(el).offset());
       return {
         x: $(el).offset().left,
         y: $(el).offset().top
