@@ -772,7 +772,7 @@ main {
   }
 
   .page-title {
-    font-size: 22px;
+    font-size: 19px;
 
     display: -ms-grid;
 
@@ -784,13 +784,13 @@ main {
   }
 
   .page-title--left {
-    padding-top: 8px;
+    padding-top: 10px;
 
     letter-spacing: 1px;
   }
 
   .page-title--right {
-    padding-top: 8px;
+    padding-top: 10px;
 
     letter-spacing: 1px;
   }
