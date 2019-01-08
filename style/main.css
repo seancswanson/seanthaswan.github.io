@@ -479,10 +479,9 @@ main {
 }
 
 .project-screenshot {
-  border: 1px solid rgba(248, 248, 242, 0.7);
   border-radius: 2px;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top left;
   background-size: cover;
 }
 
