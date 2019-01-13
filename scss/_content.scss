@@ -1,0 +1,78 @@
+/*********************/
+
+/*      Content      */
+
+/*********************/
+
+.grid {
+    display: -ms-grid;
+    display:     grid;
+
+    grid-template-columns: 250px auto;
+
+    -ms-grid-columns: 250px auto;
+}
+
+main {
+    display: -ms-grid;
+    display:     grid;
+    overflow: hidden;
+
+    grid-template-rows: 50px 100vh;
+
+    -ms-grid-rows: 50px 100vh;
+}
+
+/*********************/
+
+/*     Page Main         */
+
+/*********************/
+
+.page-main {
+    overflow-y: scroll;
+
+    padding: 50px 40px;
+}
+
+.page-main section {
+    margin-bottom: 100px;
+}
+
+.main-heading h1 {
+    font-family: 'Roboto Slab', monospace, serif;
+    font-size: 25px;
+
+    margin: 0;
+
+    letter-spacing: 2px;
+
+    color: #fd971f;
+}
+
+.main-content {
+    font-size: 16px;
+
+    color: white;
+}
+
+.white-bg {
+    color: #272822;
+    border: 1px solid rgba(39, 40, 34, .4);
+    border-radius: 3px;
+    background: rgba(248, 248, 242, .9);
+    box-shadow: 4px 4px 0 rgba(248, 248, 242, .8);
+}
+
+@media (max-width: 700px) {
+    main {
+        grid-template-rows: 50px 100vh;
+
+        -ms-grid-rows: 50px 100vh;
+    }
+    .grid {
+        grid-template-columns: auto;
+
+        -ms-grid-columns: auto;
+    }
+}

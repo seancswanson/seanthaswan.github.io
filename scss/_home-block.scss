@@ -1,0 +1,16 @@
+/* Home */
+
+.page-main--home {
+    display: block;
+}
+
+.page-main--home > .main-content {
+    display: block;
+
+    padding: 10px 25px;
+}
+
+#home-heading {
+    -webkit-transition: .2s all ease;
+            transition: .2s all ease;
+}

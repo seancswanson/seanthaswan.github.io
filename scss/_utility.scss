@@ -1,0 +1,33 @@
+/* Utility */
+
+.clickable {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.no-select {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.green-text {
+    color: #a6e22e;
+}
+
+.pink-text {
+    cursor: pointer;
+    -webkit-transition: .2s all ease;
+            transition: .2s all ease;
+
+    color: #f92672;
+    border-bottom: 1px solid transparent;
+}
+
+.pink-text:hover {
+    border-bottom: 1px dashed #f92672;
+}

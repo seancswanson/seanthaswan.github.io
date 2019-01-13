@@ -1,0 +1,119 @@
+/* Portfolio */
+
+.page-main--portfolio {
+    display: block;
+
+    .main-content {
+        display: grid;
+
+        grid-column-gap: 24px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .project-item {
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .project-top {
+        .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .project-screenshot {
+            display: block;
+
+            width: 50%;
+            margin: 20px auto 20px auto;
+        }
+    }
+
+    .project-bottom {
+        padding: 0 12px;
+
+        text-align: center;
+
+        .project-description {
+            padding: 10px;
+        }
+        
+        .project-list {
+            padding: 0;
+
+            list-style: none;
+        }
+
+        .project-tech {
+            grid-area: tech;
+
+            padding: 0;
+        }
+
+        .project-demo {
+            grid-area: demo;
+
+            padding: 0;
+        }
+
+        .project-tech-item {
+            font-size: 12px;
+
+            display: inline-block;
+
+            margin: 7px 4px;
+            padding: 3px 7px;
+
+            -webkit-transition: .05s all linear;
+                    transition: .05s all linear;
+            letter-spacing: 1px;
+
+            border: 1px solid rgba(249, 38, 114, .4);
+            border-radius: 5px;
+            box-shadow: 4px 4px 0 rgba(161, 239, 228, .8);
+        }
+
+        .project-demo-item {
+            font-weight: bold;
+
+            display: inline-block;
+
+            width: 100px;
+            margin: 4px;
+            padding: 5px 10px;
+
+            -webkit-transition: .3s all ease;
+                    transition: .3s all ease;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 1px;
+
+            color: #272822;
+            border: 1px solid rgba(249, 38, 114, .2);
+            border-radius: 5px;
+            background: #a1efe4;
+            box-shadow: 4px 4px 0 rgba(249, 38, 114, .8);
+        }
+
+        .project-demo-item:hover {
+            display: inline-block;
+
+            text-decoration: none;
+
+            color: white;
+            border: 1px solid rgba(161, 239, 228, .8);
+            border-radius: 5px;
+            background: #f92672;
+            box-shadow: 4px 4px 0 rgba(161, 239, 228, .8);
+        }
+    }
+}
+
+
+@media (max-width: 1170px) {
+}
+
+@media (max-width: 425px) {
+}

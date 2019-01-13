@@ -1,0 +1,38 @@
+/* About */
+
+.page-main--about {
+    display: block;
+}
+
+.about-content-grid {
+    display: -ms-grid;
+    display:     grid;
+    align-items: center;
+    -ms-grid-row-align: center;
+
+    grid-template-columns: 300px 1fr;
+
+    -ms-grid-columns: 300px 1fr;
+}
+
+#about-portrait {
+    display: block;
+
+    width: 250px;
+    margin: 30px auto;
+}
+
+.expando-bio,
+.abstract-bio {
+    padding: 10px 15px;
+}
+
+.expando-button {
+    display: inline-block;
+}
+
+@media (max-width: 900px) {
+    .about-content-grid {
+        display: block;
+    }
+}
