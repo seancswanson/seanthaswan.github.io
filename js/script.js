@@ -192,3 +192,19 @@
 })();
 
 App.init();
+var kinetic = new $.Kinetic(App.pageMain, {});
+
+kinetic.movingClass = {
+  up: 'kinetic-moving-up',
+  down: 'kinetic-moving-down',
+  left: 'kinetic-moving-left',
+  right: 'kinetic-moving-right'
+},
+
+kinetic.deceleratingClass = {
+  up: 'kinetic-decelerating-up',
+  down: 'kinetic-decelerating-down',
+  left: 'kinetic-decelerating-left',
+  right: 'kinetic-decelerating-right'
+};
+
