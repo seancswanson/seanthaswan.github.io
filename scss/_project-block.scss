@@ -17,9 +17,12 @@
 
     .project-top {
         .project-title {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
-            padding: 5px;
+
+            height: 90px;
+            padding: 15px;
+
             text-align: center;
         }
 
@@ -27,7 +30,7 @@
             display: block;
 
             width: 50%;
-            margin: 20px auto 20px auto;
+            margin: 0 auto 20px auto;
         }
     }
 
@@ -39,7 +42,7 @@
         .project-description {
             padding: 10px;
         }
-        
+
         .project-list {
             padding: 0;
 
@@ -47,32 +50,11 @@
         }
 
         .project-tech {
-            grid-area: tech;
-
             padding: 0;
         }
 
         .project-demo {
-            grid-area: demo;
-
             padding: 0;
-        }
-
-        .project-tech-item {
-            font-size: 12px;
-
-            display: inline-block;
-
-            margin: 7px 4px;
-            padding: 3px 7px;
-
-            -webkit-transition: .05s all linear;
-                    transition: .05s all linear;
-            letter-spacing: 1px;
-
-            border: 1px solid rgba(249, 38, 114, .4);
-            border-radius: 5px;
-            box-shadow: 4px 4px 0 rgba(161, 239, 228, .8);
         }
 
         .project-demo-item {

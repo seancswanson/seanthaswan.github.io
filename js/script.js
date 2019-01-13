@@ -142,7 +142,7 @@
       setInterval(function() {
         var randomGreeting = self.greetings[
           Math.floor(Math.random() * self.greetings.length)
-        ].toLowerCase();
+        ];
         self.homeHeading.text(randomGreeting);
         self.homeHeading.css('opacity', '1');
         setTimeout(function() {
@@ -167,19 +167,18 @@
 
     //----------
     handleBioExpand: function() {
-      var self = this;
-      self.abstractBio.toggleClass('hidden');
-      self.expandoBio.toggleClass('hidden');
-      self.aboutContent.removeClass('about-content-grid');
+      this.abstractBio.toggleClass('hidden');
+      this.expandoBio.toggleClass('hidden');
+      this.aboutContent.removeClass('about-content-grid');
     },
 
     //----------
     handleHamburgerClick: function() {
       var self = this;
-      self.state.menuToggled ?
-        self.mobileNav.css('opacity', '0') :
-        self.mobileNav.css('opacity', '1');
-      self.state.menuToggled = !self.state.menuToggled;
+      this.state.menuToggled ?
+        this.mobileNav.css('opacity', '0') :
+        this.mobileNav.css('opacity', '1');
+      this.state.menuToggled = !this.state.menuToggled;
     },
 
     //----------

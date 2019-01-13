@@ -13,34 +13,39 @@ html {
 }
 
 body {
-    font-family: "IBM Plex Mono", Consolas, monaco, monospace;
+    font-family: 'Lobster', sans-serif;
+
     overflow: hidden;
+
     height: 100%;
     margin: 0;
     padding: 0;
-    color: #a1efe4;
+
+    color: black;
     background-color: #272822;
-    background-image: url("https://www.transparenttextures.com/patterns/outlets.png");
+    background-image: url('/assets/bg.png');
 }
 
 hr {
     width: 100%;
     margin: 10px 0;
+
     border: none;
-    border-bottom: 1px dashed rgba(248, 248, 242, 0.7);
+    border-bottom: 1px dashed rgba(248, 248, 242, .7);
 }
 
 a {
     text-decoration: none;
+
     color: inherit;
 }
 
-@import "utility";
-@import "sidebar";
-@import "titlebar";
-@import "content";
-@import "home-block";
-@import "about-block";
-@import "project-block";
-@import "cv-block";
-@import "connect-block";
+@import 'utility';
+@import 'sidebar';
+@import 'titlebar';
+@import 'content';
+@import 'home-block';
+@import 'about-block';
+@import 'project-block';
+@import 'cv-block';
+@import 'connect-block';

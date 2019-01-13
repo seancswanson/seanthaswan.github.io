@@ -19,7 +19,7 @@
     color: #a6e22e;
 }
 
-.pink-text {
+.pink-link {
     cursor: pointer;
     -webkit-transition: .2s all ease;
             transition: .2s all ease;
@@ -28,6 +28,6 @@
     border-bottom: 1px solid transparent;
 }
 
-.pink-text:hover {
+.pink-link:hover {
     border-bottom: 1px dashed #f92672;
 }

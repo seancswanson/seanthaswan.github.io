@@ -5,9 +5,7 @@
 /*********************/
 
 .page-title {
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 24px;
 
     display: -ms-grid;
     display:     grid;
@@ -19,14 +17,15 @@
 
     text-align: center;
 
-    border-bottom: 1px solid rgba(248, 248, 242, .7);
+    color: #a1efe4;
+    border-bottom: 1px solid rgba(248, 248, 242, .3);
 
     -ms-grid-columns: 1fr 60px 1fr;
 }
 
 .page-title--left,
 .page-title--right {
-    padding: 6px 1px;
+    align-self: center;
 
     -webkit-transition: .2s all ease;
             transition: .2s all ease;
@@ -61,6 +60,7 @@
     .swansong-logo-container {
         display: none;
     }
+
     .hamburger-bun {
         display: -ms-grid;
         display:     grid;
@@ -71,6 +71,7 @@
         border-right: 1px dotted rgba(255, 255, 255, .7);
         border-left: 1px dotted rgba(255, 255, 255, .7);
     }
+
     .hamburger-patty {
         display: block;
         -ms-flex-item-align: center;
@@ -82,9 +83,10 @@
         background-image: url(../assets/icons/menu.svg);
         background-size: 20px 20px;
     }
+
     .nav-mobile {
         position: absolute;
-        top: 50px;
+        top: 70px;
 
         display: -ms-grid;
         display:     grid;
@@ -104,7 +106,7 @@
                 transition: .2s opacity ease-in-out;
 
         opacity: 0;
-        border-bottom: 1px solid rgba(248, 248, 242, .6);
+        border-bottom: 1px solid rgba(248, 248, 242, .3);
         background-color: #272822;
 
         -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
@@ -112,12 +114,8 @@
         -ms-grid-column-align: center;
         justify-items: center;
     }
-    .page-main {
-        padding: 50px 10px;
-    }
-    .page-title {
-        font-size: 19px;
 
+    .page-title {
         display: -ms-grid;
         display:     grid;
 
@@ -125,9 +123,10 @@
 
         -ms-grid-columns: 1fr 40px 1fr;
     }
+
     .page-title--left,
     .page-title--right {
-        padding-top: 10px;
+        align-self: center;
 
         letter-spacing: 1px;
     }

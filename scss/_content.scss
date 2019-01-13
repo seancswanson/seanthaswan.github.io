@@ -8,9 +8,9 @@
     display: -ms-grid;
     display:     grid;
 
-    grid-template-columns: 250px auto;
+    grid-template-columns: 190px auto;
 
-    -ms-grid-columns: 250px auto;
+    -ms-grid-columns: 190px auto;
 }
 
 main {
@@ -32,15 +32,36 @@ main {
 .page-main {
     overflow-y: scroll;
 
-    padding: 50px 40px;
+    padding: 20px;
 }
 
 .page-main section {
     margin-bottom: 100px;
+
+
+    .tech-item {
+        font-size: 12px;
+
+        display: inline-block;
+
+        margin: 7px 4px;
+        padding: 3px 7px;
+
+        -webkit-transition: .05s all linear;
+                transition: .05s all linear;
+        letter-spacing: 1px;
+
+        border: 1px solid rgba(249, 38, 114, .4);
+        border-radius: 5px;
+        box-shadow: 4px 4px 0 rgba(161, 239, 228, .8);
+
+        @media (max-width: 800px) {
+            text-align: left;
+        }
+    }
 }
 
 .main-heading h1 {
-    font-family: 'Roboto Slab', monospace, serif;
     font-size: 25px;
 
     margin: 0;
@@ -51,13 +72,13 @@ main {
 }
 
 .main-content {
-    font-size: 16px;
-
-    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
-.white-bg {
-    color: #272822;
+.card {
+    padding: 10px 25px;
+
     border: 1px solid rgba(39, 40, 34, .4);
     border-radius: 3px;
     background: rgba(248, 248, 242, .9);
@@ -66,9 +87,9 @@ main {
 
 @media (max-width: 700px) {
     main {
-        grid-template-rows: 50px 100vh;
+        grid-template-rows: 70px 100vh;
 
-        -ms-grid-rows: 50px 100vh;
+        -ms-grid-rows: 70px 100vh;
     }
     .grid {
         grid-template-columns: auto;
