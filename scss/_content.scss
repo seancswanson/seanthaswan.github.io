@@ -8,9 +8,9 @@
     display: -ms-grid;
     display:     grid;
 
-    grid-template-columns: 190px auto;
+    grid-template-columns: 160px auto;
 
-    -ms-grid-columns: 190px auto;
+    -ms-grid-columns: 160px auto;
 }
 
 main {
@@ -18,9 +18,9 @@ main {
     display:     grid;
     overflow: hidden;
 
-    grid-template-rows: 50px 100vh;
+    grid-template-rows: 60px 100vh;
 
-    -ms-grid-rows: 50px 100vh;
+    -ms-grid-rows: 60px 100vh;
 }
 
 /*********************/
@@ -82,7 +82,7 @@ main {
     border: 1px solid rgba(39, 40, 34, .4);
     border-radius: 3px;
     background: rgba(248, 248, 242, .9);
-    box-shadow: 4px 4px 0 rgba(248, 248, 242, .8);
+    border: 4px double rgba(0, 0, 0, 0.7);
 }
 
 @media (max-width: 700px) {

@@ -6,12 +6,12 @@
 
 .sidebar {
     font-family: 'Squada One', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 
     display: -ms-grid;
     display:     grid;
 
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 60px 1fr;
 
     height: 100vh;
 
@@ -27,7 +27,7 @@
     /* Standard syntax */
     border-right: 1px solid rgba(248, 248, 242, .3);
 
-    -ms-grid-rows: 50px 1fr;
+    -ms-grid-rows: 60px 1fr;
 }
 
 .sidebar-top {
@@ -50,21 +50,22 @@
     padding-left: 30px;
 
     -webkit-transition: .2s all ease;
-    -webkit-transition: .7s border ease-in-out;
+    -webkit-transition: .3s border ease-in-out;
             transition: .2s all ease;
-            transition: .7s border ease-in-out;
+            transition: .3s border ease-in-out;
     letter-spacing: 1.5px;
 
     border-right: 1px solid transparent;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     border-left: 1px solid transparent;
+    
+    &:hover {
+        border-bottom: 1px solid transparent;
+        border-left: 20px solid rgba(0, 0, 0, .5);
+        background: rgba(255, 255, 255, .1);
+    }
 }
 
-.nav-itemcc {
-    border-bottom: 1px solid transparent;
-    border-left: 30px solid rgba(0, 0, 0, .5);
-    background: rgba(255, 255, 255, .1);
-}
 
 .nav-mobile {
     display: none;

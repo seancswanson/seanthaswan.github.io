@@ -5,7 +5,7 @@
 /*********************/
 
 .page-title {
-    font-size: 24px;
+    font-size: 36px;
 
     display: -ms-grid;
     display:     grid;
@@ -45,11 +45,11 @@
     -ms-flex-item-align: center;
     align-self: center;
 
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 
     background-image: url(../assets/swansong-no-text-thick.svg);
-    background-size: 30px 30px;
+    background-size: contain;
 }
 
 .hamburger-bun {
@@ -68,8 +68,8 @@
         -ms-flex-pack: center;
         justify-content: center;
 
-        border-right: 1px dotted rgba(255, 255, 255, .7);
-        border-left: 1px dotted rgba(255, 255, 255, .7);
+        border-right: 1px dotted rgba(255, 255, 255, .3);
+        border-left: 1px dotted rgba(255, 255, 255, .3);
     }
 
     .hamburger-patty {
@@ -113,6 +113,8 @@
         -ms-grid-columns: 45px 1fr auto 1fr 45px;
         -ms-grid-column-align: center;
         justify-items: center;
+
+        z-index: 999;
     }
 
     .page-title {
@@ -122,11 +124,14 @@
         grid-template-columns: 1fr 40px 1fr;
 
         -ms-grid-columns: 1fr 40px 1fr;
+
+        font-size: 30px;
     }
 
     .page-title--left,
     .page-title--right {
         align-self: center;
+
 
         letter-spacing: 1px;
     }

@@ -88,6 +88,12 @@
 
                 padding: 10px;
             }
+
+            .tech-wrapper {
+                @media (max-width: 760px) {
+                    display: block;
+                }
+            }
         }
     }
 }
