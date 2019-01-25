@@ -16,7 +16,7 @@
 main {
     display: -ms-grid;
     display:     grid;
-    overflow: hidden;
+    overflow-y: hidden;
 
     grid-template-rows: 60px 100vh;
 

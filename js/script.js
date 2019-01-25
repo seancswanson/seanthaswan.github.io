@@ -159,7 +159,7 @@
 
       $(self.pageMain).animate(
         {
-          scrollTop: self.pageSectionsPos[targetSection].y + 1
+          scrollTop: self.pageSectionsPos[targetSection].y
         },
         500
       );
