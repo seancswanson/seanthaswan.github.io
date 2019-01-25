@@ -12,6 +12,7 @@ html {
 body {
   font-family: 'Squada One', sans-serif;
   overflow-y: hidden;
+  scroll-behavior: smooth;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -275,6 +276,7 @@ main {
   display: -ms-grid;
   display: grid;
   overflow-y: hidden;
+  scroll-behavior: smooth;
   grid-template-rows: 60px 100vh;
   -ms-grid-rows: 60px 100vh; }
 
